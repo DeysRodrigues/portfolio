@@ -1,0 +1,11 @@
+.cardLinguagens {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+}
+.two {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

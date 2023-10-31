@@ -1,0 +1,46 @@
+.cardProjetos {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0 ;
+
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.tag {
+    font-size: small;
+    border-radius: 1.25rem;
+    background: #C6C6C6;
+    padding: 0 .5rem;
+}
+
+.two {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+
+    width: 8rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: .5rem;
+    background-color: transparent;
+}
+.img {
+
+    background-color: aliceblue;
+}

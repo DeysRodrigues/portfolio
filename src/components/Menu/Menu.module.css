@@ -1,0 +1,27 @@
+.menu {
+
+    width: 50%;
+    height: 2.5rem;
+    flex-shrink: 0;
+    padding: 0 0.8rem;
+    border-radius: 0.625rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 2.0625rem;
+    height: 1.61875rem;
+    background-image: url(/src/assets/icons/menu-hamburguer.svg);
+    background-repeat: no-repeat;
+}
+.iconGalaxy {
+
+    width: 2.55025rem;
+    height: 2.27069rem;
+    background-image: url(/src/assets/icons/menu-galaxy.svg);
+    background-repeat: no-repeat;  
+}
+

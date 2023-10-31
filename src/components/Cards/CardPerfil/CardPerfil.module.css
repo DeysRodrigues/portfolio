@@ -1,0 +1,54 @@
+.perfil {
+
+
+    padding: 1.5rem;
+    display: flex;
+    width: 16rem;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+
+    width: 70%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 50%;
+
+}
+
+.dodge-effect {
+    filter: brightness(1.4);
+    /* Ajuste o valor para obter o efeito desejado */
+}
+
+.two {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+/* Estilo dos ícones quando o esquema de cores é escuro */
+.icon-dark {
+    fill: black; /* Cor dos ícones no esquema de cores escuro */
+}
+
+/* Estilo dos ícones quando o esquema de cores é claro */
+.icon-light {
+    fill: white; /* Cor dos ícones no esquema de cores claro */
+}
+
+.btnsobre {
+
+    width: 6.5rem;
+    height: 2.41019rem;
+    flex-shrink: 0;
+
+    border-radius: 1.25rem;
+    border: 0.125rem solid;
+    background-color: transparent;
+}

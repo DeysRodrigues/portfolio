@@ -1,0 +1,26 @@
+body {
+
+  margin: 0 2rem;
+  background-color: rgb(252, 255, 238);
+
+
+}
+
+.container {
+    
+    gap: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+
+}
+.sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+

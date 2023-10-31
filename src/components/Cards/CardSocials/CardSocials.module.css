@@ -1,0 +1,33 @@
+.cardsSocial {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
+    height: 9.625rem;
+}
+
+.cardSocial {
+    border-radius: 10px;
+    width: 4rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+ 
+    width: 2rem;
+    height: 2rem;
+
+
+}
