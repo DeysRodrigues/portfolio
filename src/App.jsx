@@ -11,6 +11,7 @@ import CardContato from './components/Cards/CardContato';
 import CardPerfil from './components/Cards/CardPerfil';
 import CardSocials from './components/Cards/CardSocials';
 import CardLinguagens from './components/Cards/CardLinguagens';
+import CardFinal from './components/Cards/CardFinal';
 
 
 
@@ -81,7 +82,7 @@ function App() {
         </section>
         <section className='sec'>
         <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
-        <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
+        <CardFinal stylesTheme={stylesTheme.versionOne}className='card'/>
         </section>
     
       </main>
