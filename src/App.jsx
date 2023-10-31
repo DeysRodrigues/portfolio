@@ -69,8 +69,8 @@ function App() {
         <section className='sec'>
           <CardTitulo stylesTheme={stylesTheme.versionOne} />
 
-          <CardProjetos titulo="Profissionais" tags={['React', 'JavaScript', 'CSS']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
-          <CardProjetos titulo="Profissionais" tags={['React', 'JavaScript', 'CSS']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
+          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
 
 
         </section>
@@ -80,6 +80,7 @@ function App() {
           <CardSocials stylesTheme={stylesTheme.versionOne} className='card'/>
         </section>
         <section className='sec'>
+        <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
         <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
         </section>
     
