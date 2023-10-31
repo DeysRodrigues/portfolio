@@ -28,6 +28,6 @@ body {
 /* Estilo para telas menores (mobile) */
 @media (max-width: 768px) {
   .sec {
-    width: 100%;
+    width: 90%;
   }
 }
