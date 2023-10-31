@@ -17,6 +17,7 @@ const CardLinguagens = ({ stylesTheme }) => {
 
   return (
     <div style={stylesTheme} className={styles.cardLinguagens}>
+      <h3>Linguagens & frameworks</h3>
       {Object.keys(linguagens).map((linguagem, index) => (
         <div key={index}>
           <img src={linguagens[linguagem]} alt={linguagem} />
