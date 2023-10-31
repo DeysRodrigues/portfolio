@@ -1,5 +1,5 @@
 import styles from "./CardFinal.module.css"
-import pdf from "./public/assets/simple-deysrodrigues.pdf"
+import pdf from "/assets/simple-deysrodrigues.pdf"
 
 const CardFinal = ({ stylesTheme }) => {
 
