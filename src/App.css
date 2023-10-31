@@ -30,4 +30,7 @@ body {
   .sec {
     width: 90%;
   }
+  .card {
+    padding: 1rem 0;
+  }
 }

@@ -75,12 +75,12 @@ function App() {
 
         </section>
         <section className='sec'>
-          <CardPerfil stylesTheme={stylesTheme.versionOne} />
-          <CardContato stylesTheme={stylesTheme.versionOne} />
-          <CardSocials stylesTheme={stylesTheme.versionOne} />
+          <CardPerfil stylesTheme={stylesTheme.versionOne} className='card'/>
+          <CardContato stylesTheme={stylesTheme.versionOne} className='card'/>
+          <CardSocials stylesTheme={stylesTheme.versionOne} className='card'/>
         </section>
         <section className='sec'>
-        <CardLinguagens stylesTheme={stylesTheme.versionOne} />
+        <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
         </section>
     
       </main>
