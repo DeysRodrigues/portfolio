@@ -38,7 +38,6 @@ function App() {
     versionOne: {
       borderRadius: '1.25rem',
       border: ' 0.125rem solid #000',
-      width: '16rem',
       color: 'black'
 
     }
@@ -80,8 +79,10 @@ function App() {
           <CardContato stylesTheme={stylesTheme.versionOne} />
           <CardSocials stylesTheme={stylesTheme.versionOne} />
         </section>
-        <section className='sec'></section>
+        <section className='sec'>
         <CardLinguagens stylesTheme={stylesTheme.versionOne} />
+        </section>
+    
       </main>
 
     </section>

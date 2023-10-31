@@ -19,8 +19,15 @@ body {
 
 }
 .sec {
+  width: 16rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* Estilo para telas menores (mobile) */
+@media (max-width: 768px) {
+  .sec {
+    width: 100%;
+  }
+}
