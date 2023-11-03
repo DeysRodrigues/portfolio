@@ -1,8 +1,9 @@
 .cardLinguagens {
+    width: 20rem;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1rem;
+    padding: 1.6rem;
+    gap: .5rem;
 }
 .two {
     display: flex;

@@ -23,7 +23,12 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+.one {
 
+  display: flex;
+  gap: 1rem;
+  width: 19rem;
+}
 /* Estilo para telas menores (mobile) */
 @media (max-width: 768px) {
   .sec {

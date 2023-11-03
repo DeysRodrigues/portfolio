@@ -1,10 +1,12 @@
 .cardFinal {
 
-    height: 17rem;
+    height: 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 19rem;
+    gap: 1rem;
 }
 
 .btnDownload {
@@ -18,4 +20,23 @@
     justify-content: center;
     font-weight: 600;
     gap: .5rem;
+}
+.cards {
+
+    display: flex;
+    gap: 1rem;
+
+}
+.cardCurso {
+
+    background-color: rgb(197, 197, 197);
+    padding: .9rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.cardCurso a {
+
+    padding: .1rem;
 }

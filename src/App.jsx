@@ -12,7 +12,7 @@ import CardPerfil from './components/Cards/CardPerfil';
 import CardSocials from './components/Cards/CardSocials';
 import CardLinguagens from './components/Cards/CardLinguagens';
 import CardFinal from './components/Cards/CardFinal';
-
+import CardMenu from './components/Cards/CardMenu';
 
 
 function App() {
@@ -39,7 +39,8 @@ function App() {
     versionOne: {
       borderRadius: '1.25rem',
       border: ' 0.125rem solid #000',
-      color: 'black'
+      color: 'black',
+
 
     }
   };
@@ -76,15 +77,20 @@ function App() {
 
         </section>
         <section className='sec'>
-          <CardPerfil stylesTheme={stylesTheme.versionOne} className='card'/>
-          <CardContato stylesTheme={stylesTheme.versionOne} className='card'/>
-          <CardSocials stylesTheme={stylesTheme.versionOne} className='card'/>
+          <CardPerfil stylesTheme={stylesTheme.versionOne} className='card' />
+          <CardContato stylesTheme={stylesTheme.versionOne} className='card' />
+          <CardSocials stylesTheme={stylesTheme.versionOne} className='card' />
         </section>
         <section className='sec'>
-        <CardLinguagens stylesTheme={stylesTheme.versionOne}className='card'/>
-        <CardFinal stylesTheme={stylesTheme.versionOne}className='card'/>
+
+          <div className='one'>
+            <CardLinguagens stylesTheme={stylesTheme.versionOne} className='card' />
+            <CardMenu stylesTheme={stylesTheme.versionOne} className='card'/>
+          </div>
+
+          <CardFinal stylesTheme={stylesTheme.versionOne} className='card' />
         </section>
-    
+
       </main>
 
     </section>
