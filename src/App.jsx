@@ -1,10 +1,9 @@
 
-
 import './App.css'
 import tinycolor from 'tinycolor2';
-import rocket from './assets/icons/rocket.svg'
 import React, { useState } from 'react';
 import { SateliteIcon, RocketIcon } from './components/Icons';
+//cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
 import CardContato from './components/Cards/CardContato';
@@ -14,16 +13,15 @@ import CardLinguagens from './components/Cards/CardLinguagens';
 import CardFinal from './components/Cards/CardFinal';
 import CardMenu from './components/Cards/CardMenu';
 
-
 function App() {
 
   const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Cor de fundo padrão
-
-  // const mudarCorFundo = (cor) => {
-  //   setBackgroundColor(cor);
-  //   document.body.style.backgroundColor = cor;
-
-  // }
+  
+  //mudar cor do fundo
+  const mudarCorFundo = (cor) => {
+    setBackgroundColor(cor);
+    document.body.style.backgroundColor = cor;
+  }
 
   const stylesTheme = {
     versionColor: {
@@ -56,39 +54,43 @@ function App() {
 
   // Verifica se a cor de fundo é escura e ajusta as cores de acordo
   const adjustedStylesTheme = colorSum <= threshold
-    ? {
-      ...stylesTheme,
-      color: 'white',       // Cor do texto
-      border: '0.125rem solid #fff'  // Cor da borda
-    }
-    : stylesTheme
-
+  ? {
+    ...stylesTheme.versionOne,
+    color: 'white',       // Cor do texto
+    border: '0.125rem solid #fff'  // Cor da borda
+  }
+  : {
+    ...stylesTheme.versionOne,
+    color: 'black',       // Cor do texto quando a cor de fundo não é escura
+    border: '0.125rem solid #000'  // Cor da borda quando a cor de fundo não é escura
+  };
+  // ------------------------------------------
   return (
 
     <section>
 
       <main className='container'>
         <section className='sec'>
-          <CardTitulo stylesTheme={stylesTheme.versionOne} />
+          <CardTitulo stylesTheme={adjustedStylesTheme} />
 
-          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
-          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<RocketIcon />} stylesTheme={stylesTheme.versionOne} />
+          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<RocketIcon />} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<RocketIcon />} stylesTheme={adjustedStylesTheme} />
 
 
         </section>
         <section className='sec'>
-          <CardPerfil stylesTheme={stylesTheme.versionOne} className='card' />
-          <CardContato stylesTheme={stylesTheme.versionOne} className='card' />
-          <CardSocials stylesTheme={stylesTheme.versionOne} className='card' />
+          <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />
+          <CardContato stylesTheme={adjustedStylesTheme} className='card' />
+          <CardSocials stylesTheme={adjustedStylesTheme} className='card' />
         </section>
         <section className='sec'>
 
           <div className='one'>
-            <CardLinguagens stylesTheme={stylesTheme.versionOne} className='card' />
-            <CardMenu stylesTheme={stylesTheme.versionOne} className='card'/>
+            <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
+            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo}  className='card'/>
           </div>
 
-          <CardFinal stylesTheme={stylesTheme.versionOne} className='card' />
+          <CardFinal stylesTheme={adjustedStylesTheme} className='card' />
         </section>
 
       </main>

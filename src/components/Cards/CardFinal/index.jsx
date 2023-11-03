@@ -1,6 +1,7 @@
 import styles from "./CardFinal.module.css"
 import pdf from "/assets/simple-deysrodrigues.pdf"
 import planet from "/src/assets/icons/download.svg"
+
 const CardFinal = ({ stylesTheme }) => {
 
     const stylesFinal = {

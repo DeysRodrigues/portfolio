@@ -1,6 +1,6 @@
 import styles from './CardMenu.module.css'
 
-const CardMenu = ({ stylesTheme }) => {
+const CardMenu = ({ stylesTheme, mudarCor }) => {
 
     return (
         <div className={styles.cardMenu} style={stylesTheme}>
