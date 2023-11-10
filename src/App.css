@@ -19,8 +19,10 @@ body {
 }
 .sec {
   width: 16rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
 }
 .one {

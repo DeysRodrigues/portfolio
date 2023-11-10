@@ -21,7 +21,7 @@
     font-size: small;
     border-radius: 1.25rem;
     background: #C6C6C6;
-    padding: 0 .5rem;
+    padding: .2rem .6rem;
 }
 
 .two {
@@ -40,8 +40,4 @@
     flex-shrink: 0;
     border-radius: .5rem;
     background-color: transparent;
-}
-.img {
-
-    background-color: aliceblue;
 }

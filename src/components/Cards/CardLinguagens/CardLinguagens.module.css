@@ -5,12 +5,14 @@
     padding: 1.6rem;
     gap: .5rem;
 }
+
 .two {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
-h3 {
-font-size: small;
 
+h3 {
+    font-size: small;
+    display: block;
 }

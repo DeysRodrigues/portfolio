@@ -38,5 +38,7 @@
 }
 .cardCurso a {
 
-    padding: .1rem;
+    padding: .3rem;
+    background-color: aliceblue;
+    border-radius: .5rem;
 }

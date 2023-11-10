@@ -2,7 +2,7 @@
 import './App.css'
 import tinycolor from 'tinycolor2';
 import React, { useState } from 'react';
-import { SateliteIcon, RocketIcon } from './components/Icons';
+import { SateliteIcon, RocketIcon, TelescopioIcon} from './components/Icons';
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
@@ -12,7 +12,7 @@ import CardSocials from './components/Cards/CardSocials';
 import CardLinguagens from './components/Cards/CardLinguagens';
 import CardFinal from './components/Cards/CardFinal';
 import CardMenu from './components/Cards/CardMenu';
-
+ 
 function App() {
 
   const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Cor de fundo padrão
@@ -73,8 +73,8 @@ function App() {
         <section className='sec'>
           <CardTitulo stylesTheme={adjustedStylesTheme} />
 
-          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<RocketIcon />} stylesTheme={adjustedStylesTheme} />
-          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<RocketIcon />} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon />} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon />} stylesTheme={adjustedStylesTheme} />
 
 
         </section>
