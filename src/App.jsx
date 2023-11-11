@@ -2,7 +2,7 @@
 import './App.css'
 import tinycolor from 'tinycolor2';
 import React, { useState } from 'react';
-import { SateliteIcon, RocketIcon, TelescopioIcon} from './components/Icons';
+import { SateliteIcon, RocketIcon, TelescopioIcon } from './components/Icons';
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
@@ -12,11 +12,11 @@ import CardSocials from './components/Cards/CardSocials';
 import CardLinguagens from './components/Cards/CardLinguagens';
 import CardFinal from './components/Cards/CardFinal';
 import CardMenu from './components/Cards/CardMenu';
- 
+
 function App() {
 
   const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Cor de fundo padrão
-  
+
   //mudar cor do fundo
   const mudarCorFundo = (cor) => {
     setBackgroundColor(cor);
@@ -36,7 +36,7 @@ function App() {
     },
     versionOne: {
       borderRadius: '1.25rem',
-      border: ' 0.125rem solid #000',
+      border: ' 0.12  rem solid #000',
       color: 'black',
 
 
@@ -54,15 +54,19 @@ function App() {
 
   // Verifica se a cor de fundo é escura e ajusta as cores de acordo
   const adjustedStylesTheme = colorSum <= threshold
-  ? {
-    ...stylesTheme.versionOne,
-    color: 'white',       // Cor do texto
-    border: '0.125rem solid #fff'  // Cor da borda
-  }
-  : {
-    ...stylesTheme.versionOne,
-    color: 'black',       // Cor do texto quando a cor de fundo não é escura
-    border: '0.125rem solid #000'  // Cor da borda quando a cor de fundo não é escura
+    ? {
+      ...stylesTheme.versionOne,
+      color: 'white',       // Cor do texto
+      border: '0.125rem solid #fff'  // Cor da borda
+    }
+    : {
+      ...stylesTheme.versionOne,
+      color: 'black',       // Cor do texto quando a cor de fundo não é escura
+      border: '0.125rem solid #000'  // Cor da borda quando a cor de fundo não é escura
+    };
+
+  const corIcon = {
+    color: adjustedStylesTheme.color
   };
   // ------------------------------------------
   return (
@@ -70,24 +74,25 @@ function App() {
     <section>
 
       <main className='container'>
-        <section className='sec'>
+        <section className='sec-1'>
           <CardTitulo stylesTheme={adjustedStylesTheme} />
 
-          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon />} stylesTheme={adjustedStylesTheme} />
-          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon />} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon}/>} stylesTheme={adjustedStylesTheme} />
 
 
         </section>
-        <section className='sec'>
+        <section className='sec-2'>
           <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />
           <CardContato stylesTheme={adjustedStylesTheme} className='card' />
           <CardSocials stylesTheme={adjustedStylesTheme} className='card' />
         </section>
-        <section className='sec'>
 
-          <div className='one'>
+        <section className='sec-3'>
+
+          <div className='one '>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
-            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo}  className='card'/>
+            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' />
           </div>
 
           <CardFinal stylesTheme={adjustedStylesTheme} className='card' />

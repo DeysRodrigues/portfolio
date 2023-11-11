@@ -27,6 +27,7 @@ a:hover {
 body {
 
   min-height: 100vh;
+  margin-top: 1px;
 }
 
 @media (min-width: 1400px) {

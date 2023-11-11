@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 0 ;
+    padding: 2.25rem 0 ;
 
 }
 
@@ -16,14 +16,13 @@
     flex-wrap: wrap;
     gap: .5rem;
 }
-
 .tag {
     font-size: small;
     border-radius: 1.25rem;
     background: #C6C6C6;
     padding: .2rem .6rem;
 }
-
+/*  parte do botao +  icon */
 .two {
 
     display: flex;
@@ -40,4 +39,9 @@
     flex-shrink: 0;
     border-radius: .5rem;
     background-color: transparent;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave à mudança de background-color */
+}
+.btn:hover {
+    background-color: rgb(202, 202, 202); /* Muda o background-color ao passar o mouse */
+   
 }

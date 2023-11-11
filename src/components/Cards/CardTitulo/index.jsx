@@ -1,16 +1,19 @@
 import styles from './CardTitulo.module.css';
-import rocket from '/src/assets/icons/rocket.svg'
+import { RocketIcon } from '../../Icons';
 
 const CardTitulo = ({ stylesTheme }) => {
 
-
+    const corIcon = {
+        color: stylesTheme.color
+    };
     return (
 
         <div className={styles.cardTitulo} style={stylesTheme}>
 
             <div>
-            <img src={rocket} alt="Rocket Icon" />
+                <RocketIcon {...corIcon} />
             </div>
+
             <div>
                 <h1>PORTFOLIO</h1>
                 <p className={styles.text}>&lt;DevJunior/&gt;</p>
