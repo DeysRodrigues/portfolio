@@ -24,19 +24,10 @@ function App() {
   }
 
   const stylesTheme = {
-    versionColor: {
-      borderColor: 'black',
-      color: 'black'
-    },
-    versionGeral: {
-      borderRadius: '1.25rem',
-      border: ' 0.125rem solid #000',
-      color: 'black'
 
-    },
     versionOne: {
       borderRadius: '1.25rem',
-      border: ' 0.12  rem solid #000',
+      border: ' 0.12rem solid #000',
       color: 'black',
 
 
