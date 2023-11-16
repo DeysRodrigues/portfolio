@@ -1,14 +1,13 @@
 import styles from "./CardFinal.module.css"
 import pdf from "/assets/simple-deysrodrigues.pdf"
-import planet from "/src/assets/icons/download.svg"
-import arrow from "/src/assets/icons/arrow.svg"
+import { DownloadIcon, PlanetIcon } from '../../Icons';
 const CardFinal = ({ stylesTheme }) => {
 
     const stylesButton = {
         border: `${stylesTheme.border}`,
         color: `${stylesTheme.color}`
     }
-    
+
     return (
         <div className={styles.cardFinal} style={stylesTheme}>
 
@@ -24,17 +23,19 @@ const CardFinal = ({ stylesTheme }) => {
                 </div>
 
             </div>
+            <div className={styles.two}>
 
-            <a href={pdf} download="seu_arquivo.pdf">
+                <a href={pdf} download="seu_arquivo.pdf">
 
-                <button className={styles.btnDownload} style={stylesButton}>
-                    curriculo em PDF
-                    <img src={planet} alt="sss " />
-                </button>
-              <a href=""> <img src={arrow} alt="" /></a>
-                 
+                    <button className={styles.btnDownload} style={stylesButton}>
+                        curriculo em PDF
+                        <DownloadIcon></DownloadIcon>
+                    </button>
 
-            </a>
+                </a>
+
+                <PlanetIcon className={styles.iconPlanet} />
+            </div>
         </div>
     )
 }

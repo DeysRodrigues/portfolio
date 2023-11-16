@@ -7,5 +7,6 @@ import LinkedinIcon from "./LInkedinIcon";
 import BehanceIcon from "./BehanceIcon";
 import SolIcon from "./SolIcon";
 import PlanetIcon from "./PlanetIcon";
+import DownloadIcon from "./DownloadIcon";
 
-export { SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon, GithubIcon, LinkedinIcon, BehanceIcon, SolIcon, PlanetIcon};
+export { SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon, GithubIcon, LinkedinIcon, BehanceIcon, SolIcon, PlanetIcon, DownloadIcon};
