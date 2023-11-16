@@ -1,30 +1,31 @@
 .cardMenu {
 
-    padding: .7rem;
+  padding: .7rem;
+  background-color: #7739a759 ;
 }
 
 .input {
-    border: 1px solid red;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0;
-    background: transparent;
-    outline: none;
-    /* Remova o contorno ao focar */
-}
-
-
-
-.input::-webkit-color-swatch-wrapper {
-    border: none;
-    /* Remove a borda da caixa de seleção */
-
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: transparent;
+  position: relative;
 }
 
 .input::-webkit-color-swatch {
-    border: none;
-    /* Remove a borda da caixa de seleção */
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px rgba(14, 13, 13, 0.384);
-    /* Adicione sombra embaixo da caixa de seleção */
+
+  /* Remove a borda da caixa de seleção */
+  border-radius: 50%;
+  border: none;
+
+}
+
+
+.iconSol {
+  
+  position: absolute;
+
+  transform: translate(-128%, 30%);
+  pointer-events: none;
+
 }

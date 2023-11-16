@@ -1,6 +1,11 @@
 import SateliteIcon from "./SateliteIcon";
 import RocketIcon from "./RocketIcon";
 import TelescopioIcon from "./TelescopioIcon";
-import AstronautIcon
- from "./AstronautIcon";
- export{SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon};
+import AstronautIcon from "./AstronautIcon";
+import GithubIcon from "./GithubIcon";
+import LinkedinIcon from "./LInkedinIcon";
+import BehanceIcon from "./BehanceIcon";
+import SolIcon from "./SolIcon";
+import PlanetIcon from "./PlanetIcon";
+
+export { SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon, GithubIcon, LinkedinIcon, BehanceIcon, SolIcon, PlanetIcon};

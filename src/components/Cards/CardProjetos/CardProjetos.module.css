@@ -19,7 +19,7 @@
 .tag {
     font-size: small;
     border-radius: 1.25rem;
-    background: #C6C6C6;
+    background: #9070aa;
     padding: .2rem .6rem;
 }
 /*  parte do botao +  icon */
@@ -42,6 +42,6 @@
     transition: background-color 0.3s ease; /* Adiciona uma transição suave à mudança de background-color */
 }
 .btn:hover {
-    background-color: rgb(202, 202, 202); /* Muda o background-color ao passar o mouse */
+    background-color: #a971d3; /* Muda o background-color ao passar o mouse */
    
 }

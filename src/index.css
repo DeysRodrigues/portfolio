@@ -28,10 +28,12 @@ body {
 
   min-height: 100vh;
   margin-top: 1px;
+
+  background: linear-gradient(0deg, #611999 36.05%, rgba(97, 25, 153, 0.00) 102.03%);
 }
 
 @media (min-width: 1400px) {
   body {
-    overflow: hidden;
+   
   }
 }

@@ -1,25 +1,28 @@
 import styles from './CardSocials.module.css';
-import github from '/src/assets/icons/github.svg';
-import linkedin from '/src/assets/icons/linkedin.svg';
-import behance from '/src/assets/icons/behance.svg';
+import { BehanceIcon, LinkedinIcon, GithubIcon } from '../../Icons';
 
 const CardSocials = ({stylesTheme}) => {
+    
+    const corIcon = {
+        color: stylesTheme.color
+    };
+
     const socials = [
         {
 
             link: 'https://github.com/skskks',
-            backgroundImage: `url(${github})`,
+            backgroundImage: <LinkedinIcon {...corIcon}/>,
         },
 
         {
 
             link: 'https://github.com/skskks',
-            backgroundImage: `url(${linkedin})`,
+            backgroundImage: <GithubIcon {...corIcon}/>,
         },
         {
 
             link: 'https://github.com/skskks',
-            backgroundImage: `url(${behance})`,
+            backgroundImage: <BehanceIcon {...corIcon}/>,
         },
     ];
 
@@ -33,7 +36,7 @@ const CardSocials = ({stylesTheme}) => {
             {socials.map((social, index) => (
                 <div key={index} className={styles.cardSocial} style={stylesSocial}>
                     <a href={social.link} target="_blank" rel="noopener noreferrer" >
-                        <div style={{ backgroundImage: social.backgroundImage }} className={styles.social}></div>
+                        <div className={styles.social}>{social.backgroundImage}</div>
                     </a>
                 </div>
             ))}

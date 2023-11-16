@@ -2,7 +2,7 @@
 import './App.css'
 import tinycolor from 'tinycolor2';
 import React, { useState } from 'react';
-import { SateliteIcon, RocketIcon, TelescopioIcon } from './components/Icons';
+import { SateliteIcon, TelescopioIcon } from './components/Icons';
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
@@ -28,8 +28,6 @@ function App() {
     versionOne: {
       borderRadius: '1.25rem',
       border: ' 0.12rem solid #000',
-      color: 'black',
-
 
     }
   };
@@ -48,12 +46,15 @@ function App() {
     ? {
       ...stylesTheme.versionOne,
       color: 'white',       // Cor do texto
-      border: '0.125rem solid #fff'  // Cor da borda
+      border: '0.125rem solid #fff',
+      // Cor da borda
     }
     : {
       ...stylesTheme.versionOne,
       color: 'black',       // Cor do texto quando a cor de fundo não é escura
-      border: '0.125rem solid #000'  // Cor da borda quando a cor de fundo não é escura
+      border: '0.125rem solid #000',
+     
+      // Cor da borda quando a cor de fundo não é escura
     };
 
   const corIcon = {
@@ -69,7 +70,7 @@ function App() {
           <CardTitulo stylesTheme={adjustedStylesTheme} />
 
           <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} />
-          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon}/>} stylesTheme={adjustedStylesTheme} />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} />
 
 
         </section>
@@ -83,7 +84,7 @@ function App() {
 
           <div className='one '>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
-            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' />
+            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor =  {stylesTheme.color}/>
           </div>
 
           <CardFinal stylesTheme={adjustedStylesTheme} className='card' />

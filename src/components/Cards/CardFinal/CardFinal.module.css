@@ -1,12 +1,13 @@
 .cardFinal {
 
-    padding: 1.6rem 0rem;
+    padding: 1.6rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 19rem;
     gap: 1rem;
+
 }
 
 .btnDownload {
@@ -28,8 +29,8 @@
 
 }
 .cardCurso {
-
-    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+  background-color: #9070aa;
     padding: .9rem 1.5rem;
     border-radius: 1rem;
     display: flex;
@@ -38,7 +39,11 @@
 }
 .cardCurso a {
 
-    padding: .3rem;
+    padding: .2rem .5rem;
     background-color: aliceblue;
     border-radius: .5rem;
+}
+.cardCurso a:hover {
+
+    color: rgb(189, 189, 189);
 }
