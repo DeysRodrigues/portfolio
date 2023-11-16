@@ -1,10 +1,11 @@
 .cardMenu {
 
   padding: .7rem;
-  background-color: #7739a759 ;
+  background-color: #7739a759;
   display: flex;
+  gap: .5rem;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
 .input {
@@ -25,10 +26,27 @@ align-items: center;
 
 
 .iconSol {
-  
+
   position: absolute;
 
   transform: translate(-128%, 30%);
   pointer-events: none;
 
+}
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.githubIcon {
+  padding: .4rem;
+  background-color:#000000;
+  border-radius: 50%;
+  width: 2.5rem;
+  display: flex;
+ justify-content: center;
+}
+.githubIcon:hover {
+
+  background-color: rgb(245, 245, 245);
 }

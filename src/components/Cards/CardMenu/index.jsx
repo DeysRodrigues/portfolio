@@ -1,5 +1,5 @@
 import styles from './CardMenu.module.css'
-import { SolIcon, GithubMenuIcon } from '../../Icons'
+import { SolIcon, GithubMenuIcon, CoffeIcon } from '../../Icons'
 
 const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
 
@@ -13,14 +13,18 @@ const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
         </span>
       </div>
 
-      <div>
-        <a href="">
-        <GithubMenuIcon></GithubMenuIcon>
+      <div className={styles.two} >
+
+        <a href="" className={styles.githubIcon}>
+        <GithubMenuIcon color='#7739A7'/>
         </a>
         
       </div>
       <div>
-
+      <a href="" className={styles.githubIcon}>
+        <CoffeIcon color='#7739A7'/>
+        </a>
+        
       </div>
 
     </div>
