@@ -8,5 +8,7 @@ import BehanceIcon from "./BehanceIcon";
 import SolIcon from "./SolIcon";
 import PlanetIcon from "./PlanetIcon";
 import DownloadIcon from "./DownloadIcon";
+import GithubMenuIcon from "./GithubMenuIcon";
 
-export { SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon, GithubIcon, LinkedinIcon, BehanceIcon, SolIcon, PlanetIcon, DownloadIcon};
+
+export { SateliteIcon, RocketIcon, TelescopioIcon, AstronautIcon, GithubIcon, LinkedinIcon, BehanceIcon, SolIcon, PlanetIcon, DownloadIcon, GithubMenuIcon};

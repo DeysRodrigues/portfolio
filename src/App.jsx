@@ -27,7 +27,7 @@ function App() {
 
     versionOne: {
       borderRadius: '1.25rem',
-      border: ' 0.12rem solid #000',
+      border: ' 0.1rem solid #000',
 
     }
   };
@@ -46,13 +46,13 @@ function App() {
     ? {
       ...stylesTheme.versionOne,
       color: 'white',       // Cor do texto
-      border: '0.125rem solid #fff',
+      border: '0.1rem solid #f6',
       // Cor da borda
     }
     : {
       ...stylesTheme.versionOne,
       color: 'black',       // Cor do texto quando a cor de fundo não é escura
-      border: '0.125rem solid #000',
+      border: '0.1rem solid #000',
      
       // Cor da borda quando a cor de fundo não é escura
     };
