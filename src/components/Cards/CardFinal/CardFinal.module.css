@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 19rem;
     gap: 1rem;
 
@@ -29,23 +29,29 @@
 
 }
 .cardCurso {
-    border: 1px solid black;
-  background-color: #9070aa;
-    padding: .9rem 1.5rem;
+
+    padding: .9rem 1.3rem;
     border-radius: 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: .5rem;
 }
+.cardCurso span {
+    font-weight: 600;
+}
 .cardCurso a {
 
-    padding: .2rem .5rem;
-    background-color: aliceblue;
-    border-radius: .5rem;
+    padding: .4rem .7rem;
+    color: blueviolet;
+    background-color:#561588;
+    border-radius: 5rem;
 }
 .cardCurso a:hover {
 
-    color: rgb(189, 189, 189);
+  
+    background-color:#ae70c7;
 }
 .two {
     width: 100%;

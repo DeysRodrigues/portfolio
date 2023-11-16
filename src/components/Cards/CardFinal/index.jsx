@@ -13,13 +13,15 @@ const CardFinal = ({ stylesTheme }) => {
 
             <div className={styles.cards}>
 
-                <div className={styles.cardCurso}>
+                <div className={styles.cardCurso} style={stylesTheme}>
+                    <a href="">Explorar</a>
                     <span>Cursos</span>
-                    <a href="">ver tudo</a>
+
                 </div>
-                <div className={styles.cardCurso}>
-                    <span>Formacao </span>
-                    <a href="">ver tudo</a>
+                <div className={styles.cardCurso} style={stylesTheme}>
+                    <a href="">Explorar</a>
+                    <span>Formação</span>
+
                 </div>
 
             </div>
