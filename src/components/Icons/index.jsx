@@ -3,7 +3,7 @@ import RocketIcon from "./RocketIcon";
 import TelescopioIcon from "./TelescopioIcon";
 import AstronautIcon from "./AstronautIcon";
 import GithubIcon from "./GithubIcon";
-import LinkedinIcon from "./LInkedinIcon";
+import LinkedinIcon from "./LinkedinIcon";
 import BehanceIcon from "./BehanceIcon";
 import SolIcon from "./SolIcon";
 import PlanetIcon from "./PlanetIcon";
