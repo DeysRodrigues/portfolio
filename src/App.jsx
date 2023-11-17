@@ -3,6 +3,7 @@ import './App.css'
 import tinycolor from 'tinycolor2';
 import React, { useState } from 'react';
 import { SateliteIcon, TelescopioIcon } from './components/Icons';
+
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
