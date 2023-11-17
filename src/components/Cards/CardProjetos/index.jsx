@@ -12,9 +12,9 @@ const CardProjetos = ({ titulo, tags, stylesTheme, iconProjeto }) => {
 
         <div className={styles.cardProjetos} style={stylesTheme}>
 
-            <h3>
+            <h2>
                 {titulo}
-            </h3>
+            </h2>
             <div className={styles.tags}>
                 {tags.map((tag, index) => (
                     <span key={index} className={styles.tag}>{tag}</span>

@@ -1,0 +1,46 @@
+@import 'globals';
+
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+a {
+
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: rgb(166, 113, 252);
+}
+
+body {
+
+  min-height: 100vh;
+  margin-top: 1px;
+  font-family: $font-font;
+
+background: linear-gradient(0deg, #611999 36.05%, rgba(97, 25, 153, 0.00) 102.03%);
+}
+p {
+  font-size: $p-size;
+}
+  // Tamanhos responsivos para telas maiores, como Full HD
+  @media screen and (min-width: 1920px) {
+   h1 {
+    font-size: 2rem;
+   }
+    h2 {
+     font-size: $h2-size-1920;
+    }
+    p {
+      font-size: $p-size-1920;
+    }
+  }
