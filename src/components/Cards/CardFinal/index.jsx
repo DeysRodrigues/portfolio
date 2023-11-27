@@ -1,4 +1,4 @@
-import styles from "./CardFinal.module.css"
+import styles from "./CardFinal.module.scss"
 import pdf from "/assets/simple-deysrodrigues.pdf"
 import { DownloadIcon, PlanetIcon } from '../../Icons';
 const CardFinal = ({ stylesTheme }) => {

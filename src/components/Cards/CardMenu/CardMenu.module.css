@@ -1,17 +1,17 @@
 .cardMenu {
-
-  padding: .7rem;
+  width: 20%;
+  padding: .3rem;
   background-color: #7739a759;
   display: flex;
-  gap: .5rem;
+  gap: .6rem;
   flex-direction: column;
   align-items: center;
 }
 
 .input {
   border: none;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 2.8rem;
+  height: 3rem;
   background: transparent;
   position: relative;
 }
@@ -19,34 +19,37 @@
 .input::-webkit-color-swatch {
 
   /* Remove a borda da caixa de seleção */
-  border-radius: 50%;
+  border-radius: 100%;
   border: none;
 
 }
 
 
-.iconSol {
+.iconColorMenu {
 
   position: absolute;
 
-  transform: translate(-128%, 30%);
+  transform: translate(-110%, 30%);
   pointer-events: none;
 
 }
+
 .two {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.githubIcon {
+
+.menuIcon {
   padding: .4rem;
-  background-color:#000000;
+  background-color: #000000;
   border-radius: 50%;
   width: 2.5rem;
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
-.githubIcon:hover {
+
+.menuIcon:hover {
 
   background-color: rgb(245, 245, 245);
 }

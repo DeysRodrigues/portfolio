@@ -1,18 +1,17 @@
 .cardFinal {
 
-    padding: 1.6rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 19rem;
     gap: 1rem;
 
 }
 
 .btnDownload {
 
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: .6rem;
     background-color: transparent;
     margin-bottom: 1rem;
@@ -21,38 +20,50 @@
     justify-content: center;
     font-weight: 600;
     gap: .5rem;
+    box-shadow: 0px 5px 0px rgb(0, 0, 0);
 }
+
+.btnDownload:hover {
+    background-color: #ae70c7;
+}
+
 .cards {
 
     display: flex;
     gap: 1rem;
 
 }
+
 .cardCurso {
 
     padding: .9rem 1.3rem;
-    border-radius: 1rem;
+    width: 8rem;
+    background-color: #561588;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: .5rem;
 }
+
 .cardCurso span {
     font-weight: 600;
 }
+
 .cardCurso a {
 
     padding: .4rem .7rem;
     color: blueviolet;
-    background-color:#561588;
+    background-color: #561588;
     border-radius: 5rem;
 }
+
 .cardCurso a:hover {
 
-  
-    background-color:#ae70c7;
+
+    background-color: #ae70c7;
 }
+
 .two {
     width: 100%;
     display: flex;

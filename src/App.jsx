@@ -3,7 +3,7 @@ import './App.css'
 import tinycolor from 'tinycolor2';
 import React, { useState } from 'react';
 import { SateliteIcon, TelescopioIcon } from './components/Icons';
-
+  
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
@@ -83,7 +83,7 @@ function App() {
 
         <section className='sec-3'>
 
-          <div className='one '>
+          <div className='one'>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
             <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor =  {stylesTheme.color}/>
           </div>

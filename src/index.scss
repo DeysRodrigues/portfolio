@@ -7,18 +7,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+h1 {
+ font-size: 1.5rem;
+}
 h2{
   font-size: 1.2rem;
 }
 
 a {
-
+  font-size: $a-size;
   text-decoration: inherit;
+  padding: $a-padding;
 }
 
 a:hover {
-  color: rgb(166, 113, 252);
+  color: white;
 }
 
 body {
@@ -27,20 +30,30 @@ body {
   margin-top: 1px;
   font-family: $font-font;
 
-// background: linear-gradient(0deg, #611999 36.05%, rgba(97, 25, 153, 0.00) 102.03%);
+ background: linear-gradient(0deg, #611999 36.05%, rgba(97, 25, 153, 0.00) 102.03%);
 }
 p {
   font-size: $p-size;
 }
+@media screen and (max-width: 1336px){
+
+  
+}
+  
+
   // Tamanhos responsivos para telas maiores, como Full HD
   @media screen and (min-width: 1920px) {
    h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
    }
     h2 {
      font-size: $h2-size-1920;
     }
     p {
       font-size: $p-size-1920;
+    }
+    a {
+      font-size: $a-size-1920;
+      padding: $a-size-1920;
     }
   }

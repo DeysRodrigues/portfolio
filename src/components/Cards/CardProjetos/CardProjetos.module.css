@@ -19,7 +19,7 @@ h2 {
     gap: .5rem;
 }
 .tag {
-    font-size: .7rem;
+    font-size: .6rem;
     border-radius: 1.25rem;
     background: #9070aa;
     padding: .2rem .6rem;
@@ -40,7 +40,7 @@ h2 {
     height: 3rem;
     flex-shrink: 0;
     border-radius: .5rem;
-    background-color: transparent;
+    background-color: #7739a759;
     transition: background-color 0.3s ease; /* Adiciona uma transição suave à mudança de background-color */
 }
 .btn:hover {

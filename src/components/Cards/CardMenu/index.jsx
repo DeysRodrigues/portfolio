@@ -1,5 +1,5 @@
 import styles from './CardMenu.module.css'
-import { SolIcon, GithubMenuIcon, CoffeIcon } from '../../Icons'
+import { ColorMenuIcon, GithubMenuIcon, CoffeIcon } from '../../Icons'
 
 const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
 
@@ -8,20 +8,20 @@ const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
     <div className={styles.cardMenu} style={stylesTheme}>
       <div>
         <input defaultValue="white" value={valueColor} onChange={evento => mudarCor(evento.target.value)} type='color' className={styles.input} />
-        <span className={styles.iconSol}>
-          <SolIcon />
+        <span className={styles.iconColorMenu}>
+          <ColorMenuIcon />
         </span>
       </div>
 
       <div className={styles.two} >
 
-        <a href="" className={styles.githubIcon}>
+        <a href="" className={styles.menuIcon}>
         <GithubMenuIcon color='#7739A7'/>
         </a>
         
       </div>
       <div>
-      <a href="" className={styles.githubIcon}>
+      <a href="" className={styles.menuIcon}>
         <CoffeIcon color='#7739A7'/>
         </a>
         
