@@ -1,6 +1,6 @@
 .cardFinal {
 
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,13 +31,14 @@
 
     display: flex;
     gap: 1rem;
+    width: 100%;
 
 }
 
 .cardCurso {
 
     padding: .9rem 1.3rem;
-    width: 8rem;
+    width: 50%;
     background-color: #561588;
     display: flex;
     justify-content: center;
@@ -48,14 +49,15 @@
 
 .cardCurso span {
     font-weight: 600;
+    font-size: .7rem;
 }
 
 .cardCurso a {
 
     padding: .4rem .7rem;
     color: blueviolet;
-    background-color: #561588;
-    border-radius: 5rem;
+    background-color: hsla(0, 0%, 100%, 0.116);
+    border-radius: .4rem;
 }
 
 .cardCurso a:hover {
@@ -67,7 +69,39 @@
 .two {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
     align-items: center;
-    padding-right: 2rem;
+
+}
+
+// Tamanhos responsivos para telas maiores, como Full HD
+@media screen and (min-width: 1920px) {
+    .cardCurso {
+        height: 8rem;
+        width: 50%;
+
+    }
+
+    .cardCurso span {
+
+        font-size: 1rem;
+    }
+    .cardCurso a {
+
+        padding: .6rem 1rem;
+    
+    }
+
+    .btnDownload {
+
+        padding: 1.5rem;
+
+    }
+
+    .two {
+
+        justify-content: start;
+
+    }
 }
