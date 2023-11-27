@@ -17,12 +17,18 @@ const CardProjetos = ({ titulo, tags, stylesTheme, iconProjeto }) => {
             </h2>
             <div className={styles.tags}>
                 {tags.map((tag, index) => (
-                    <span key={index} className={styles.tag}>{tag}</span>
+                    <a href="#" className={styles.tag}>
+                         <span key={index} >{tag}</span>
+                    </a>
+                   
                 ))}
             </div>
 
             <div className={styles.two}>
+                <a href="https://github.com/DeysRodrigues?tab=repositories" target="_blank">
                 <button className={styles.btn} style={stylesButton}>Ver Projetos</button>
+                </a>
+              
 
                 <div> {iconProjeto} </div>
             </div>

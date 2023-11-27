@@ -10,18 +10,18 @@ const CardSocials = ({stylesTheme}) => {
     const socials = [
         {
 
-            link: 'https://github.com/skskks',
+            link: 'https://www.linkedin.com/in/deys-rodrigues/',
             backgroundImage: <LinkedinIcon {...corIcon}/>,
         },
 
         {
 
-            link: 'https://github.com/skskks',
+            link: 'https://github.com/DeysRodrigues',
             backgroundImage: <GithubIcon {...corIcon}/>,
         },
         {
 
-            link: 'https://github.com/skskks',
+            link: 'https://www.behance.net/venushim',
             backgroundImage: <BehanceIcon {...corIcon}/>,
         },
     ];

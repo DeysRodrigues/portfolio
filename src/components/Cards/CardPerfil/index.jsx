@@ -1,5 +1,5 @@
 import styles from './CardPerfil.module.css'
-import fotoDeys from '/src/assets/fotos/eu-preto-branco.jpg'
+import fotoDeys from '/src/assets/fotos/deys-preto-branco.jpg'
 import { AstronautIcon } from '../../Icons';
 
 const CardPerfil = ({ stylesTheme }) => {
@@ -19,7 +19,7 @@ const CardPerfil = ({ stylesTheme }) => {
 
         <div className={styles.cardPerfil} style={stylesTheme}>
             <div className={styles.one}>
-                <img src={fotoDeys} alt="foto de Deys Rodrigues" className={styles.imagem} style={imageStyle} />
+                <img src={fotoDeys} alt="foto de Deys Rodrigues" title="foto de Deys Rodrigues" className={styles.imagem} style={imageStyle} />
             </div>
 
 

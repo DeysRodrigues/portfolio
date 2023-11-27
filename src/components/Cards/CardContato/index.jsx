@@ -6,12 +6,38 @@ const CardContato = ({ stylesTheme }) => {
         border: `${stylesTheme.border}`
     }
     const ancoras = [
-        "instagram",
-        "twitter",
-        "discord",
-        "e-mail",
-        "notion",
-        "phone"
+        {
+            title: 'linkedin',
+            link: 'https://www.linkedin.com/in/deys-rodrigues/',
+
+        },
+
+        {
+            title: 'github',
+            link: 'https://github.com/DeysRodrigues',
+
+        },
+        {
+            title: 'behance',
+            link: 'https://www.behance.net/venushim',
+
+        },
+        {
+            title: 'email',
+            link: 'mailto:rodriguesdeys@gmail.com',
+
+        },
+
+        {
+            title: 'instagram',
+            link: 'https://www.instagram.com/venushimdev/',
+
+        },
+        {
+            title: 'twitter',
+            link: '#',
+
+        },
     ];
 
     return (
@@ -21,9 +47,9 @@ const CardContato = ({ stylesTheme }) => {
             {
                 ancoras.map((ancora, index) => (
 
-                    <a href="" key={index} className={styles.ancora} style={stylesAncora}>
+                    <a href={ancora.link} key={index} className={styles.ancora} style={stylesAncora} target='_blank'>
 
-                        {ancora}
+                        {ancora.title}
                     </a>)
                 )
             }
