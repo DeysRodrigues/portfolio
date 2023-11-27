@@ -19,7 +19,9 @@ function App() {
   const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Cor de fundo padrão
 
   //mudar cor do fundo
+
   const mudarCorFundo = (cor) => {
+ 
     setBackgroundColor(cor);
     document.body.style.backgroundColor = cor;
   }

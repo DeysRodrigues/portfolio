@@ -19,7 +19,9 @@ a {
   text-decoration: inherit;
   padding: $a-padding;
 }
-
+a:visited {
+  color: rgb(0, 0, 0);
+}
 a:hover {
   color: white;
 }

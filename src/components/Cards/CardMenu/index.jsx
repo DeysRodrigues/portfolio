@@ -7,7 +7,7 @@ const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
 
     <div className={styles.cardMenu} style={stylesTheme}>
       <div>
-        <input defaultValue="white" value={valueColor} onChange={evento => mudarCor(evento.target.value)} type='color' className={styles.input} />
+        <input defaultValue="red" value={valueColor} onChange={evento => mudarCor(evento.target.value)} type='color' className={styles.input} />
         <span className={styles.iconColorMenu}>
           <ColorMenuIcon />
         </span>
