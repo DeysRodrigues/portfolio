@@ -1,3 +1,5 @@
+@import 'globals';
+
 .cardProjetos {
 
     display: flex;
@@ -9,9 +11,7 @@
     padding: 1.7rem .7rem;
 
 }
-h2 {
-    font-size: 40%;
-}
+
 .tags {
     flex-wrap: wrap;
     display: flex;
@@ -21,7 +21,7 @@ h2 {
 .tag {
     font-size: .6rem;
     border-radius: 1.25rem;
-    background: #9070aa;
+    background: $secondary-color;
     padding: .2rem .6rem;
 }
 /*  parte do botao +  icon */
@@ -47,3 +47,12 @@ h2 {
     background-color: #a971d3; /* Muda o background-color ao passar o mouse */
    
 }
+
+
+  // Tamanhos responsivos para telas maiores, como Full HD
+  @media screen and (min-width: 1920px) {
+  
+     .tag {
+       font-size: 90%;
+     }
+   }

@@ -1,4 +1,4 @@
-import styles from './CardProjetos.module.css';
+import styles from './CardProjetos.module.scss';
 
 const CardProjetos = ({ titulo, tags, stylesTheme, iconProjeto }) => {
 
