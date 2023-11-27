@@ -1,9 +1,9 @@
 
 import './App.css'
 import tinycolor from 'tinycolor2';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SateliteIcon, TelescopioIcon } from './components/Icons';
-  
+
 //cards
 import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
@@ -16,12 +16,30 @@ import CardMenu from './components/Cards/CardMenu';
 
 function App() {
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Atualiza o estado windowWidth quando o tamanho da tela é alterado
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Adiciona um ouvinte de evento de redimensionamento à janela
+    window.addEventListener('resize', handleResize);
+
+    // Remove o ouvinte de evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   const [backgroundColor, setBackgroundColor] = useState('#ffffff'); // Cor de fundo padrão
 
   //mudar cor do fundo
 
   const mudarCorFundo = (cor) => {
- 
+
     setBackgroundColor(cor);
     document.body.style.backgroundColor = cor;
   }
@@ -56,7 +74,7 @@ function App() {
       ...stylesTheme.versionOne,
       color: 'black',       // Cor do texto quando a cor de fundo não é escura
       border: '0.1rem solid #000',
-     
+
       // Cor da borda quando a cor de fundo não é escura
     };
 
@@ -70,15 +88,15 @@ function App() {
 
       <main className='container'>
         <section className='sec-1'>
-          <CardTitulo stylesTheme={adjustedStylesTheme} />
-
-          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} />
-          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} />
+          <CardTitulo stylesTheme={adjustedStylesTheme} className='card' />
+          {windowWidth < 500 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
+          <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} className='card' />
+          <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} className='card' />
 
 
         </section>
         <section className='sec-2'>
-          <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />
+          {windowWidth >= 500 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
           <CardContato stylesTheme={adjustedStylesTheme} className='card' />
           <CardSocials stylesTheme={adjustedStylesTheme} className='card' />
         </section>
@@ -87,7 +105,7 @@ function App() {
 
           <div className='one'>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
-            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor =  {stylesTheme.color}/>
+            <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />
           </div>
 
           <CardFinal stylesTheme={adjustedStylesTheme} className='card' />
