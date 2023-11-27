@@ -12,22 +12,13 @@
 .sec-1,
 .sec-2,
 .sec-3 {
-
+  width: 22%;
   display: grid;
-  flex-direction: column;
   gap: 1rem;
   height: 100%;
 
 }
 
-.sec-1 {
-  grid-template-rows: 20%;
-}
-
-.sec-2 {
-  width: 16rem;
-  grid-template-rows: 45%;
-}
 
 .one {
   display: flex;
@@ -35,23 +26,20 @@
 }
 
 /* telas menores que 1336px */
-@media (max-width: 1336px) {
+@media screen and (max-width: 1366px) {
   .container {
     height: auto;
+
   }
 
   .sec-1,
   .sec-2,
   .sec-3 {
-    width: 16rem;
+    width: 19rem;
     gap: 1rem;
     height: auto;
     ;
   }
-
-  /* .sec {
-    width: 90%;
-  } */
 
   .card {
     padding: 1.6rem 0;
@@ -61,17 +49,11 @@
 /* Estilos específicos para telas maiores que o tamanho HD  */
 @media screen and (min-width: 1366px) {
 
-  .container {
-    height: 95vh;
-  }
-
-
   .sec-1,
   .sec-2,
   .sec-3 {
     width: 22%;
     display: grid;
-    flex-direction: column;
     gap: 1rem;
     height: 100%;
 

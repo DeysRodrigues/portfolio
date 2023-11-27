@@ -18,14 +18,15 @@ const CardPerfil = ({ stylesTheme }) => {
     return (
 
         <div className={styles.cardPerfil} style={stylesTheme}>
-
-            <img src={fotoDeys} alt="foto de Deys Rodrigues" className={styles.imagem} style={imageStyle} />
+            <div className={styles.one}>
+                <img src={fotoDeys} alt="foto de Deys Rodrigues" className={styles.imagem} style={imageStyle} />
+            </div>
 
 
 
             <div className={styles.two} >
 
-                <AstronautIcon {...corIcon}/>
+                <AstronautIcon {...corIcon} />
                 <button className={styles.btnsobre} style={btnColor}>sobre</button>
             </div>
 

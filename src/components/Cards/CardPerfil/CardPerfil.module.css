@@ -1,6 +1,6 @@
 .cardPerfil {
 
-    padding: 1.4rem 1rem;
+    padding: .2rem 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -10,13 +10,16 @@
 }
 
 .imagem {
-
     width: 65%;
-    height: 70%;
     border-radius: 100%;
 
 }
-
+.one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
 /* botao e icon */
 
 .two {
