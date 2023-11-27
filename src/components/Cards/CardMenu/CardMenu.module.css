@@ -53,3 +53,14 @@
 
   background-color: rgb(245, 245, 245);
 }
+/* telas menores que 500px */
+@media screen and (max-width: 500px) {
+  .cardMenu {
+    width:100%;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row;
+
+  }
+  }
+  

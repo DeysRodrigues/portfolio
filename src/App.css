@@ -27,12 +27,8 @@
   display: flex;
   gap: 1rem;
 }
-/* Estilos para telas menores ou iguais a 768 pixels (celulares) */
-@media screen and (max-width: 768px) {
-  .co > div:nth-child(4) {
-    order: 4;
-  }
-}
+
+
 /* telas menores que 1336px */
 @media screen and (max-width: 1366px) {
   .container {
