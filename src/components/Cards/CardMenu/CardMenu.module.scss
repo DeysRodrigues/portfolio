@@ -1,11 +1,13 @@
+@import '/src/globals';
+
 .cardMenu {
+  @include flex-column-center;
+  justify-content: start;
   width: 20%;
   padding: .3rem;
   background-color: #7739a759;
-  display: flex;
   gap: .6rem;
-  flex-direction: column;
-  align-items: center;
+
 }
 
 .input {
@@ -24,7 +26,6 @@
 
 }
 
-
 .iconColorMenu {
 
   position: absolute;
@@ -33,34 +34,36 @@
   pointer-events: none;
 
 }
+// gitgub e coffee icons
 
 .two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .menuIcon {
+  @include flex-center;
   padding: .4rem;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: #000000;
   border-radius: 50%;
   width: 2.5rem;
-  display: flex;
-  justify-content: center;
+
 }
 
 .menuIcon:hover {
 
   background-color: rgb(245, 245, 245);
 }
+// ------- responsivo -----
+
 /* telas menores que 700px */
 @media screen and (max-width: 700px) {
   .cardMenu {
-    width:100%;
+    width: 100%;
     justify-content: center;
     gap: 1rem;
     flex-direction: row;
 
   }
-  }
-  
+}

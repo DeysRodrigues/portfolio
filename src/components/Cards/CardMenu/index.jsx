@@ -1,4 +1,4 @@
-import styles from './CardMenu.module.css'
+import styles from './CardMenu.module.scss'
 import { ColorMenuIcon, GithubMenuIcon, CoffeIcon } from '../../Icons'
 
 const CardMenu = ({ stylesTheme, mudarCor, valueColor }) => {
