@@ -1,0 +1,23 @@
+@import '/src/globals';
+
+.cardContato {
+
+    @include flex-wrap-center;
+    padding: 1.7rem 0.3rem;
+    gap: .3rem;
+
+}
+
+.ancora {
+
+    @include flex-center;
+
+    font-style: normal;
+    font-weight: 400;
+    border-radius: .7rem;
+
+    width: 30%;
+
+
+
+}

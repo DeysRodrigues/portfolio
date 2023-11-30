@@ -2,68 +2,64 @@
 
 .cardProjetos {
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @include flex-column-center;
     padding: 1.7rem .7rem;
 
 }
 
 .tags {
-    flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
 }
+
 .tag {
     font-size: .6rem;
     border-radius: 1.25rem;
     background: $secondary-color;
     padding: .2rem .6rem;
 }
+
 .tag:hover {
     background-color: black;
 }
+
 /*  parte do botao +  icon */
 .two {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @include flex-wrap-center;
 }
 
 .btn {
 
     width: 7rem;
     height: 2.5rem;
-    flex-shrink: 0;
     font-size: .7rem;
     border-radius: .5rem;
     background-color: #7739a759;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave à mudança de background-color */
+    transition: background-color 0.3s ease;
+
 }
+
 .btn:hover {
-    background-color: #a971d3; /* Muda o background-color ao passar o mouse */
-   
+    background-color: #a971d3;
+
+
 }
 
 
-  // Tamanhos responsivos para telas maiores, como Full HD
-  @media screen and (min-width: 1920px) {
+// Tamanhos responsivos para telas maiores, como Full HD
+@media screen and (min-width: 1920px) {
     .cardProjetos {
         gap: 1.5rem;
     }
-     .tag {
-       font-size: 90%;
-     }
-     .btn {
+
+    .tag {
+        font-size: 90%;
+    }
+
+    .btn {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
-     }
-   }
+    }
+}

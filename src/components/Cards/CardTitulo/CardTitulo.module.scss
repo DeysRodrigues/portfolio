@@ -1,15 +1,16 @@
+@import '/src/globals';
+
 .cardTitulo {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  @include flex-wrap-center;
+
   padding: .9rem;
-  align-items: center;
+
   text-align: center;
   box-shadow: 0px 5px 0px rgb(0, 0, 0);
-  flex-wrap: wrap;
+
 }
+
 h1 {
 
   font-size: 1.6rem;
 }
-

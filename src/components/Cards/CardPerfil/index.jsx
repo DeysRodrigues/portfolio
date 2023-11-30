@@ -1,4 +1,4 @@
-import styles from './CardPerfil.module.css'
+import styles from './CardPerfil.module.scss'
 import fotoDeys from '/src/assets/fotos/deys-preto-branco.jpg'
 import { AstronautIcon } from '../../Icons';
 

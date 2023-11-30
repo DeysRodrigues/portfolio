@@ -1,0 +1,20 @@
+@import '/src/globals';
+
+.cardsSocial {
+
+    @include flex-wrap-center;
+
+    gap: .5rem;
+    padding: 1.6rem .5rem;
+    box-shadow: 0px 5px 0px rgb(0, 0, 0);
+
+}
+
+.cardSocial {
+    @include flex-center;
+    
+    border-radius: 10px;
+    width: 4rem;
+    height: 4.8rem;
+
+}

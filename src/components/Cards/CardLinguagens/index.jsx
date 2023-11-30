@@ -1,4 +1,4 @@
-import styles from './CardLinguagens.module.css'
+import styles from './CardLinguagens.module.scss'
 import html from '/src/assets/icons/html.svg'; 
 import css from '/src/assets/icons/css.svg'; 
 import js from '/src/assets/icons/js.svg'; 

@@ -4,10 +4,11 @@ $primary-color: #7739A7;
 $secondary-color: #b77acf;
 $bonus-color: #7739a759;
 
-$font-font: 'Poppins', sans-serif ;
+$font-font: 'Poppins', sans-serif;
 
 $link-size-: 2rem;
 
+$h2-size: 1.6rem;
 $h2-size-1920: 1.6rem;
 
 $p-size: 90%;
@@ -17,3 +18,42 @@ $a-size: .6rem;
 $a-size-1920: .9rem;
 $a-padding: .4rem;
 $a-padding-1920: 1rem .5rem;
+
+/// ---------- mixins 
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+//card titulo
+//card socials
+@mixin flex-wrap-center {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+//card linguagens
+@mixin flex-column-wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+//card socials
+@mixin flex-center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

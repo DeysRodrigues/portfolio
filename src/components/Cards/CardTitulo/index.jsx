@@ -1,4 +1,4 @@
-import styles from './CardTitulo.module.css';
+import styles from './CardTitulo.module.scss';
 import { RocketIcon } from '../../Icons';
 
 const CardTitulo = ({ stylesTheme }) => {

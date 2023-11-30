@@ -1,4 +1,4 @@
-import styles from './CardContato.module.css'
+import styles from './CardContato.module.scss'
 
 const CardContato = ({ stylesTheme }) => {
 

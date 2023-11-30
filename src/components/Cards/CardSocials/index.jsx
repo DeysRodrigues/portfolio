@@ -1,4 +1,4 @@
-import styles from './CardSocials.module.css';
+import styles from './CardSocials.module.scss';
 import { BehanceIcon, LinkedinIcon, GithubIcon } from '../../Icons';
 
 const CardSocials = ({stylesTheme}) => {
@@ -36,7 +36,7 @@ const CardSocials = ({stylesTheme}) => {
             {socials.map((social, index) => (
                 <div key={index} className={styles.cardSocial} style={stylesSocial}>
                     <a href={social.link} target="_blank" rel="noopener noreferrer" >
-                        <div className={styles.social}>{social.backgroundImage}</div>
+                        <div>{social.backgroundImage}</div>
                     </a>
                 </div>
             ))}

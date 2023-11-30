@@ -1,25 +1,23 @@
+@import '/src/globals';
+
 .cardFinal {
+    @include flex-column-center;
 
     padding: 1rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 
 }
 
 .btnDownload {
 
+    @include flex-center;
+
     border-radius: .5rem;
     padding: .6rem;
-    background-color: transparent;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 600;
     gap: .5rem;
+
+    background-color: transparent;
     box-shadow: 0px 5px 0px rgb(0, 0, 0);
 }
 
@@ -37,13 +35,10 @@
 
 .cardCurso {
 
+    @include flex-column-center;
     padding: .9rem 1.3rem;
     width: 50%;
     background-color: #561588;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: .5rem;
 }
 
@@ -67,11 +62,9 @@
 }
 
 .two {
+    @include flex-center;
     width: 100%;
-    display: flex;
-    justify-content: center;
     gap: 1rem;
-    align-items: center;
 
 }
 
@@ -87,10 +80,11 @@
 
         font-size: 1rem;
     }
+
     .cardCurso a {
 
         padding: .6rem 1rem;
-    
+
     }
 
     .btnDownload {

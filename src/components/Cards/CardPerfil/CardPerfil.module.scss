@@ -1,12 +1,9 @@
-.cardPerfil {
+@import '/src/globals';
 
+.cardPerfil {
+    @include flex-column-center;
     padding: .2rem 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .imagem {
@@ -14,13 +11,15 @@
     border-radius: 100%;
 
 }
+
 .one {
     width: 100%;
     display: flex;
     justify-content: center;
-   
+
 }
-/* botao e icon */
+
+/* icon e botao */
 
 .two {
     display: flex;
