@@ -53,8 +53,8 @@
 
   background-color: rgb(245, 245, 245);
 }
-/* telas menores que 500px */
-@media screen and (max-width: 500px) {
+/* telas menores que 700px */
+@media screen and (max-width: 700px) {
   .cardMenu {
     width:100%;
     justify-content: center;

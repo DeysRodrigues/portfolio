@@ -88,9 +88,9 @@ function App() {
 
       <main className='container'>
         <section className='sec-1'>
-          {windowWidth < 500 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />} 
+          {windowWidth < 700 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />} 
           <CardTitulo stylesTheme={adjustedStylesTheme} className='card' />
-          {windowWidth < 500 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
+          {windowWidth < 700 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
 
           <CardProjetos titulo="Profissionais" tags={['React', 'Parcerias', 'Grupos']} iconProjeto={<SateliteIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} className='card' />
           <CardProjetos titulo="Pessoais" tags={['Criativos', 'Diversao', 'Canvas']} iconProjeto={<TelescopioIcon {...corIcon} />} stylesTheme={adjustedStylesTheme} className='card' />
@@ -98,7 +98,7 @@ function App() {
 
         </section>
         <section className='sec-2'>
-          {windowWidth >= 500 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
+          {windowWidth >= 700 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
           <CardContato stylesTheme={adjustedStylesTheme} className='card' />
           <CardSocials stylesTheme={adjustedStylesTheme} className='card' />
         </section>
@@ -107,7 +107,7 @@ function App() {
 
           <div className='one'>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
-            {windowWidth >= 500 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />}
+            {windowWidth >= 700 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />}
          
           </div>
 
