@@ -36,10 +36,10 @@ body {
 p {
   font-size: $p-size;
 }
-@media screen and (max-width: 1336px){
+@media screen and (max-width: 700px){
   body {
   
-    background: linear-gradient(0deg, #611999 36.05%, rgba(93, 48, 126, 0) 102.03%);
+    background: linear-gradient(0deg, #9242d0 36.05%, rgba(93, 48, 126, 0) 102.03%);
    }
   
 }
