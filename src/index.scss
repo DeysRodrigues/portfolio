@@ -37,13 +37,17 @@ p {
   font-size: $p-size;
 }
 @media screen and (max-width: 1336px){
-
+  body {
+  
+    background: linear-gradient(0deg, #611999 36.05%, rgba(93, 48, 126, 0) 102.03%);
+   }
   
 }
   
 
   // Tamanhos responsivos para telas maiores, como Full HD
   @media screen and (min-width: 1920px) {
+  
    h1 {
     font-size: 1.8rem;
    }
