@@ -22,8 +22,6 @@ const CardPerfil = ({ stylesTheme }) => {
                 <img src={fotoDeys} alt="foto de Deys Rodrigues" title="foto de Deys Rodrigues" className={styles.imagem} style={imageStyle} />
             </div>
 
-
-
             <div className={styles.two} >
 
                 <AstronautIcon {...corIcon} />

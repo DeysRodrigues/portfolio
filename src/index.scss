@@ -31,7 +31,7 @@ body {
   margin-top: 1px;
   font-family: $font-font;
 
- background: linear-gradient(0deg, #611999 36.05%, rgba(97, 25, 153, 0.00) 102.03%);
+ background: linear-gradient(0deg, #611999 0%, rgba(97, 25, 153, 0.00) 102.03%);
 }
 p {
   font-size: $p-size;
@@ -39,7 +39,7 @@ p {
 @media screen and (max-width: 700px){
   body {
   
-    background: linear-gradient(0deg, #9242d0 36.05%, rgba(93, 48, 126, 0) 102.03%);
+    background: linear-gradient(0deg, #9242d0 0%, rgba(93, 48, 126, 0) 102.03%);
    }
   
 }

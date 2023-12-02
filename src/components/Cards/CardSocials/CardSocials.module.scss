@@ -18,3 +18,14 @@
     height: 4.8rem;
 
 }
+
+  // Tamanhos responsivos para telas maiores, como Full HD
+  @media screen and (min-width: 1920px) {
+  
+    .cardSocial {
+     
+        width: 6rem;
+        height: 6rem;
+    
+    }
+   }
