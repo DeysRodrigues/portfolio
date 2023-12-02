@@ -50,19 +50,8 @@
   }
 }
 
-/* Estilos específicos para telas maiores que o tamanho HD  */
-@media screen and (min-width: 1366px) {
 
-  .sec-1,
-  .sec-2,
-  .sec-3 {
-    width: 22%;
-    display: grid;
-    gap: 1rem;
-    height: 100%;
 
-  }
-}
 
 /* @media screen and (min-width: 1920px) {
 
