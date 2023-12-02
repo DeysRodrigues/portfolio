@@ -15,17 +15,24 @@ import CardFinal from './components/Cards/CardFinal';
 import CardMenu from './components/Cards/CardMenu';
 
 function App() {
+ 
+  /*--- O estado windowWidth é atualizado dinamicamente em resposta ao redimensionamento da janela. 
+  Essa abordagem é essencial para criar uma interface responsiva, permitindo a adaptação do layout,
+   estilo e renderização de componentes de acordo com o tamanho da tela do navegador. ---*/
 
+  // Inicializa o estado windowWidth com a largura atual da janela
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  // Atualiza o estado windowWidth quando o tamanho da tela é alterado
+  
   useEffect(() => {
+
+    // Atualiza o estado com a largura atual da janela
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
     // Adiciona um ouvinte de evento de redimensionamento à janela
     window.addEventListener('resize', handleResize);
+
 
     // Remove o ouvinte de evento quando o componente é desmontado
     return () => {
@@ -88,7 +95,7 @@ function App() {
 
       <main className='container'>
         <section className='sec-1'>
-          {windowWidth < 700 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />} 
+          {windowWidth < 700 && <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />}
           <CardTitulo stylesTheme={adjustedStylesTheme} className='card' />
           {windowWidth < 700 && <CardPerfil stylesTheme={adjustedStylesTheme} className='card' />}
 
@@ -107,8 +114,8 @@ function App() {
 
           <div className='one'>
             <CardLinguagens stylesTheme={adjustedStylesTheme} className='card' />
-            {windowWidth >= 700 &&    <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />}
-         
+            {windowWidth >= 700 && <CardMenu stylesTheme={adjustedStylesTheme} mudarCor={mudarCorFundo} className='card' valueColor={stylesTheme.color} />}
+
           </div>
 
           <CardFinal stylesTheme={adjustedStylesTheme} className='card' />
