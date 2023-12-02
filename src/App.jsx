@@ -64,7 +64,7 @@ function App() {
   const color = tinycolor(backgroundColor).toRgb();
 
   // Define um limite para considerar as cores como escuras
-  const threshold = 82 + 0 + 0; // Soma dos valores R, G e B de (82, 0, 0)
+  const threshold = 70 + 0 + 70; // Soma dos valores R, G e B de (82, 0, 0)
 
   // Soma dos valores R, G e B da cor de fundo
   const colorSum = color.r + color.g + color.b;

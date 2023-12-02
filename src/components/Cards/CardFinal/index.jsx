@@ -29,7 +29,7 @@ const CardFinal = ({ stylesTheme }) => {
             </div>
             <div className={styles.two}>
 
-                <a href={pdf} download="seu_arquivo.pdf">
+                <a href= '#'>
 
                     <button className={styles.btnDownload} style={stylesButton}>
                         curriculo em PDF
