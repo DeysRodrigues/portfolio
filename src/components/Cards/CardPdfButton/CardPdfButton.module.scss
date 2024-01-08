@@ -6,7 +6,7 @@
 
     gap: .5rem;
     padding: 1.6rem .5rem;
-    box-shadow: 0px 5px 0px rgb(0, 0, 0);
+
 
 }
 
@@ -18,7 +18,30 @@
     height: 4.8rem;
 
 }
+.cardsSocial a {
 
+ margin: 0;
+    
+
+}
+
+.btnDownload {
+
+    @include flex-center;
+
+    border-radius: .5rem;
+    padding: .6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    gap: .5rem;
+
+    background-color: transparent;
+    box-shadow: 0px 3px 0px rgb(0, 0, 0);
+}
+
+.btnDownload:hover {
+    background-color: #ab9bb156;
+}
   // Tamanhos responsivos para telas maiores, como Full HD
   @media screen and (min-width: 1920px) {
   

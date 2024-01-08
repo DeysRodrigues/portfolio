@@ -22,7 +22,7 @@ a:visited {
   color: rgb(0, 0, 0);
 }
 a:hover {
-  color: white;
+  color: rgb(160, 160, 160);
 }
 
 body {
@@ -31,17 +31,11 @@ body {
   margin-top: 1px;
   font-family: $font-font;
 
- background: linear-gradient(0deg, #611999 0%, rgba(97, 25, 153, 0.00) 102.03%);
+  background-color: beige;
+
 }
 p {
   font-size: $p-size;
-}
-@media screen and (max-width: 700px){
-  body {
-  
-    background: linear-gradient(0deg, #9242d0 0%, rgba(93, 48, 126, 0) 102.03%);
-   }
-  
 }
   
 

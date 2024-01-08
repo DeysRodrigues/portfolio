@@ -3,27 +3,11 @@
 .cardFinal {
     @include flex-column-center;
 
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
 
 }
 
-.btnDownload {
 
-    @include flex-center;
-
-    border-radius: .5rem;
-    padding: .6rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    gap: .5rem;
-
-    background-color: transparent;
-    box-shadow: 0px 5px 0px rgb(0, 0, 0);
-}
-
-.btnDownload:hover {
-    background-color: #ae70c7;
-}
 
 .cards {
 
@@ -36,29 +20,28 @@
 .cardCurso {
 
     @include flex-column-center;
-    padding: .9rem 1.3rem;
-    width: 50%;
-    background-color: #561588;
+    padding: 3.3rem 1.3rem;
+    width: 50%; 
     gap: .5rem;
+    box-shadow: 0px 5px 0px rgb(0, 0, 0);
 }
 
-.cardCurso span {
+.cardCurso h3 {
     font-weight: 600;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .cardCurso a {
 
-    padding: .4rem .7rem;
-    color: blueviolet;
-    background-color: hsla(0, 0%, 100%, 0.116);
-    border-radius: .4rem;
+    padding: .7rem 1.5rem;
+    background-color: rgba(231, 207, 253, 0.425);
+    border-radius: 1rem;
 }
 
 .cardCurso a:hover {
 
 
-    background-color: #ae70c7;
+    background-color: #050505c2;
 }
 
 .two {

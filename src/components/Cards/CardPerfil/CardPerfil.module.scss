@@ -25,6 +25,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -39,22 +40,24 @@
     border: 0.1rem solid;
     background-color: transparent;
 }
-@media screen and (max-width: 700px){
+
+@media screen and (max-width: 700px) {
 
     .cardPerfil {
 
         padding: 1rem 1rem;
-    
+
     }
-    
+
 }
-  // Tamanhos responsivos para telas maiores, como Full HD
-  @media screen and (min-width: 1920px) {
-  
+
+// Tamanhos responsivos para telas maiores, como Full HD
+@media screen and (min-width: 1920px) {
+
     .btnsobre {
 
         width: 8rem;
         height: 3rem;
-   
+
     }
-   }
+}

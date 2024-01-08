@@ -9,7 +9,7 @@ import CardTitulo from './components/Cards/CardTitulo';
 import CardProjetos from './components/Cards/CardProjetos';
 import CardContato from './components/Cards/CardContato';
 import CardPerfil from './components/Cards/CardPerfil';
-import CardSocials from './components/Cards/CardSocials';
+import CardSocials from './components/Cards/CardPdfButton';
 import CardLinguagens from './components/Cards/CardLinguagens';
 import CardFinal from './components/Cards/CardFinal';
 import CardMenu from './components/Cards/CardMenu';
@@ -55,7 +55,7 @@ function App() {
 
     versionOne: {
       borderRadius: '1.25rem',
-      border: ' 0.1rem solid #000',
+      color: 'black'
 
     }
   };
@@ -74,7 +74,7 @@ function App() {
     ? {
       ...stylesTheme.versionOne,
       color: 'white',       // Cor do texto
-      border: '0.1rem solid #f6',
+      border: '0.1rem solid #fff',
       // Cor da borda
     }
     : {

@@ -1,6 +1,5 @@
 import styles from "./CardFinal.module.scss"
-import pdf from "/assets/simple-deysrodrigues.pdf"
-import { DownloadIcon, PlanetIcon } from '../../Icons';
+
 const CardFinal = ({ stylesTheme }) => {
 
     const stylesButton = {
@@ -15,31 +14,19 @@ const CardFinal = ({ stylesTheme }) => {
 
                 <div className={styles.cardCurso} style={stylesTheme}>
                
-                    <span>Cursos</span>
+                    <h3>Cursos</h3>
                     <a href="">Explorar</a>
 
                 </div>
                 <div className={styles.cardCurso} style={stylesTheme}>
                 
-                    <span>Formação</span>
+                    <h3>Formação</h3>
                     <a href="">Explorar</a>
 
                 </div>
 
             </div>
-            <div className={styles.two}>
 
-                <a href= '#'>
-
-                    <button className={styles.btnDownload} style={stylesButton}>
-                        curriculo em PDF
-                        <DownloadIcon></DownloadIcon>
-                    </button>
-
-                </a>
-
-                <PlanetIcon />
-            </div>
         </div>
     )
 }

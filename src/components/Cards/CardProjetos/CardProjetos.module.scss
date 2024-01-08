@@ -16,7 +16,7 @@
 .tag {
     font-size: .6rem;
     border-radius: 1.25rem;
-    background: $secondary-color;
+    background:  rgba(222, 187, 255, 0.363);
     padding: .2rem .6rem;
 }
 
@@ -35,13 +35,13 @@
     height: 2.5rem;
     font-size: .7rem;
     border-radius: .5rem;
-    background-color: #7739a759;
     transition: background-color 0.3s ease;
+    background-color: transparent;
 
 }
 
 .btn:hover {
-    background-color: #a971d3;
+    background-color: #5e5e5e18;
 
 
 }
