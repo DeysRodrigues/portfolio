@@ -71,8 +71,8 @@ const CardProjects = () => {
 
                     <div className="text-primary-text flex gap-9">
                         <p className="text-sm">
-                            Description: Of course! Here's a fictional text in first person about a junior front-end developer and illustrator who codes with creativity:
-                            My Journey as a Front-end Developer: Where Code Meets Creativi isn't just about functionality.
+                            Description: Of course! Here’s a fictional text in first person about a junior front-end developer and illustrator who codes with creativity:
+                            My Journey as a Front-end Developer: Where Code Meets Creativi isn’t just about functionality.
                         </p>
                         <div className="text-end">
                             <Badge>Next</Badge>

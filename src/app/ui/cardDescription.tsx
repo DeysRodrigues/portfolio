@@ -7,7 +7,7 @@ const CardDescription = () => {
                 <SquareX size={32} color="#6574ff" strokeWidth={1.5} />
             </div>
             <p className="text-primary-text text-sm">
-                Hi, I'm Deys, and I'm not your <br />
+                Hi, I’m Deys, and I’m not your <br />
                 typical front-end developer. With <br />
                 a background in illustration and a <br />
                 passion for bringing ideas to life, <br />
