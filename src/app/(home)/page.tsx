@@ -6,6 +6,7 @@ import { CircleChevronDown } from "lucide-react";
 import CardProjects from "../ui/cardProjects";
 import CardTasks from "../ui/cardTasks";
 import CardTrajectory from "../ui/cardTrajectory"
+import Link from "next/link";
 
 
 export default function Home() {
@@ -16,19 +17,21 @@ export default function Home() {
           <CardPhoto />
           <CardName />
           <CardDescription />
-
-
         </section>
-        <div className="icon-arrow w-20 h-20 mt-5"></div>
+        <Link href="/#down">
+          <div className="icon-arrow w-20 h-20 mt-5"></div>
+        </Link>
+
       </div>
       <section className="flex flex-col justify-between gap-6 w-[70%] md:flex-row">
 
-        <CardTasks></CardTasks>
+        <CardTasks ></CardTasks>
         <CardTrajectory></CardTrajectory>
       </section>
       <section className="w-full  md:w-[70%]">
         <div className="">
           <CardProjects></CardProjects>
+        
         </div>
 
       </section>
