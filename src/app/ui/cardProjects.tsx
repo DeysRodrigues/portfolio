@@ -8,7 +8,7 @@ import Image from "next/image";
 const CardProjects = () => {
     return (
 
-        <div className=" flex flex-col ">
+        <div className=" flex flex-col" id="down">
             {/* header */}
             <div className="bg-secondary flex justify-between p-3 rounded-ss-2xl rounded-se-2xl ">
                 <div className="flex items-center gap-2">
