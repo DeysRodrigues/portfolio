@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import { Poller_One } from "next/font/google";
+import Link from "next/link";
 
 const poller = Poller_One({
     subsets: ['latin'],
@@ -18,13 +19,18 @@ const CardName = () => {
                     Rodrigues
                 </span>
             </div>
-         
+
             <span className="text-primary-text">Dev Front-end</span>
             <div className=" w-full flex flex-col items-end gap-1">
-            <Github className="text-primary-text"/>
-            <Linkedin className="text-secondary" />
-            <Instagram className="text-secondary" />
-
+                <Link href="https://github.com/DeysRodrigues"  target="_blank" rel="noopener noreferrer">
+                    <Github className="text-primary-text" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/deys-rodrigues/"  target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="text-secondary" />
+                </Link>
+                <Link href="https://www.instagram.com/venushima/"  target="_blank" rel="noopener noreferrer">
+                    <Instagram className="text-secondary" />
+                </Link>
             </div>
 
         </div>);
