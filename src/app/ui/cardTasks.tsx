@@ -8,7 +8,7 @@ const poller = Poller_One({
 })
 const CardTasks = () => {
     return (
-        <div className="bg-[#2D2541] rounded-2xl py-8 md:w-[50%]" >
+        <div className="bg-[#2D2541] rounded-2xl py-8 md:w-[40%]" >
             <div className="bg-primary-text flex flex-col gap-6 p-9">
                 <h2 className={`${poller.className} text-secondary text-xl text-center `}>
                     LANGUAGES <br /> & FRAMEWORKS

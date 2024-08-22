@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CardTrajectory = () => {
     return (
-        <div className=" flex flex-col w-full w-[50%]">
+        <div className=" flex flex-col w-full md:w-[50%]">
 
             <div className="flex flex-col gap-6 md:flex-row">
                 <div className="flex gap-6">
@@ -27,7 +27,7 @@ const CardTrajectory = () => {
                             <p className="text-primary-text text-xs  w-40">UFPI - Universidade Federal do Piauí</p>
                             <span className="text-primary-text font-bold text-xs">Curso Incompleto</span>
                         </div>
-                        <div className="mt-20">
+                        <div className="mt-">
                             <span className="text-primary-text">2021</span>
                             <p className="text-secondary text-sm w-full">Start front-end studies</p>
                             <p className="text-primary-text text-xs  w-40">sequence of self-taught studies through online courses.</p>
