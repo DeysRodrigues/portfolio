@@ -23,18 +23,19 @@ export default function Home() {
         </Link>
 
       </div>
-      <section className="flex flex-col justify-between gap-6 w-[70%] md:flex-row">
+       <section className="flex flex-col justify-center gap-6 w-[70%] md:flex-row">
 
-        <CardTasks ></CardTasks>
         <CardTrajectory></CardTrajectory>
-      </section>
-      <section className="w-full  md:w-[70%]">
+       </section>
+
+       <section className="w-full  md:w-[70%]">
         <div className="">
           <CardProjects></CardProjects>
         
         </div>
 
       </section>
+      <CardTasks ></CardTasks>
 
     </main>
   );

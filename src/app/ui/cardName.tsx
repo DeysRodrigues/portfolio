@@ -28,7 +28,7 @@ const CardName = () => {
                 <Link href="https://www.linkedin.com/in/deys-rodrigues/"  target="_blank" rel="noopener noreferrer">
                     <Linkedin className="text-secondary" />
                 </Link>
-                <Link href="https://www.instagram.com/venushima/"  target="_blank" rel="noopener noreferrer">
+                <Link href=""  target="_blank" rel="noopener noreferrer">
                     <Instagram className="text-secondary" />
                 </Link>
             </div>
