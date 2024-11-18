@@ -7,33 +7,40 @@ import CardProjects from "../ui/cardProjects";
 import CardTasks from "../ui/cardTasks";
 import CardTrajectory from "../ui/cardTrajectory"
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import CardButtons from "../ui/cardButtons";
 
 
 export default function Home() {
   return (
     <main className="flex gap-10 items-center flex-col m-5">
-      <div className="flex flex-col gap-6 justify-center items-center h-screen">
-        <section className="flex justify-center flex-wrap gap-4">
+      <section className="flex flex-col gap-6 mb-20  justify-center items-center md:h-screen">
+        <section className="flex flex-col justify-center items-center flex-wrap gap-5 md:flex-row">
           <CardPhoto />
           <CardName />
           <CardDescription />
         </section>
+
         <Link href="/#down">
-          <div className="icon-arrow w-20 h-20 mt-5"></div>
+          <div className="icon-arrow row w-20 h-20 mt-5"></div>
         </Link>
 
-      </div>
-       <section className="flex flex-col justify-center gap-6 w-[70%] md:flex-row">
+
+      </section>
+
+      <section className="flex flex-col justify-center items-center   w-[70%] md:flex-row md:px-32">
 
         <CardTrajectory></CardTrajectory>
-       </section>
+        <CardButtons></CardButtons>
 
-       <section className="w-full  md:w-[70%]">
-        <div className="">
+      </section>
+
+      <section className="w-full flex-col md:w-[70%] md:flex-row">
+   
           <CardProjects></CardProjects>
-        
-        </div>
 
+      
+   
       </section>
       <CardTasks ></CardTasks>
 

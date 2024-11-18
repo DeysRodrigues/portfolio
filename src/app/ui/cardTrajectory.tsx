@@ -37,15 +37,7 @@ const CardTrajectory = () => {
                     </div>
                 </div>
 
-                <div className="">
-                    <Link href="/"  target="_blank" rel="noopener noreferrer">
-                    <Button className="relative p-7 text-tertiary font-bold">
-                        CURRÍCULO PDF
-                        <span className="absolute -right-3 -top-2 bottom-2 border-2 w-full rounded-md "></span>
-                    </Button>
-                    </Link>
-                   
-                </div>
+         
             </div>
 
         </div>
