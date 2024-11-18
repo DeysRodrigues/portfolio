@@ -73,6 +73,10 @@
     background-repeat: no-repeat;
     background-position: center
   }
+  .rotate_icon {
+    transform: rotate(-45deg); /* Não esqueça do 'deg' */
+  }
+  
 }
 
 @layer base {
