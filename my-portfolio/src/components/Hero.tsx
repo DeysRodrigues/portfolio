@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react'
-import StarfieldBackground from './StarfieldBackground'
+// import StarfieldBackground from './StarfieldBackground'
 
 interface HeroProps {
   isLoading: boolean
