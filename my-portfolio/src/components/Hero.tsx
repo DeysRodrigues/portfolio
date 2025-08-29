@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({ isLoading }) => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center section-padding pt-20">
             {/* Fundo com estrelas randomizadas */}
-      <StarfieldBackground count={100} />
+      {/* <StarfieldBackground count={100} /> */}
       <div className="container-custom max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
