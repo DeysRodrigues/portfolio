@@ -7,68 +7,77 @@ interface ProjectsProps {
 }
 
 const Projects: React.FC<ProjectsProps> = ({ isLoading }) => {
-  const projects = [
-    {
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com sistema de pagamentos, gestão de estoque e painel administrativo.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=240&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2024",
-      status: "Concluído"
-    },
-    {
-      title: "Task Management App",
-      description: "Aplicativo de gerenciamento de tarefas com colaboração em tempo real usando Socket.io.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=240&fit=crop",
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2024",
-      status: "Em desenvolvimento"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Dashboard meteorológico com visualizações interativas e previsões detalhadas.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=240&fit=crop",
-      technologies: ["React", "D3.js", "API", "Chart.js"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2023",
-      status: "Concluído"
-    },
-    {
-      title: "Social Media Analytics",
-      description: "Ferramenta de análise de redes sociais com machine learning para análise de sentimentos.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop",
-      technologies: ["Python", "React", "TensorFlow", "Flask"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2023",
-      status: "Concluído"
-    },
-    {
-      title: "Blog Platform",
-      description: "Plataforma de blog com editor rich text, sistema de comentários e SEO otimizado.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6b696?w=400&h=240&fit=crop",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2024",
-      status: "Concluído"
-    },
-    {
-      title: "Fitness Tracker",
-      description: "Aplicativo mobile de fitness com tracking de exercícios e gamificação.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=240&fit=crop",
-      technologies: ["React Native", "Firebase", "Chart.js", "Redux"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      year: "2023",
-      status: "Concluído"
-    }
-  ]
+
+const projects = [
+  {
+    title: "Dynamic Notes",
+    description:
+      "Desenvolvimento de um site dashboard modular para gerenciamento de tasks, open source focado em box. Com widgets que podem ser arrastados e redimensionados. Responsivo para mobile, tablet e desktop.",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=240&fit=crop",
+    technologies: ["React.js", "Tailwind", "TypeScript", "Figma", "GitHub"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    year: "2025",
+    status: "Em desenvolvimento",
+  },
+  {
+    title: "FallsGame",
+    description:
+      "Um launcher para gerenciar jogos, criado e desenvolvido em equipe, documentado pelo GitLab e utilizando Scrum. Inclui estudo de banco de dados, DER, diagramas de classe e casos de uso.",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=240&fit=crop",
+    technologies: ["Java", "JavaFX", "Maven", "PostgreSQL", "Scrum"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    year: "2025",
+    status: "Concluído",
+  },
+  {
+    title: "Agenda Java Web",
+    description:
+      "Sistema de agenda de contatos em Java Web. Cadastro, edição, exclusão e listagem de contatos em MySQL, validação de campos e geração de relatório em PDF.",
+    image:
+      "https://images.unsplash.com/photo-1581092334651-ddf26d9c2f95?w=400&h=240&fit=crop",
+    technologies: ["Java", "JavaBeans", "JDBC", "MySQL", "Apache Tomcat", "MVC"],
+    githubUrl: "https://github.com/seuusuario/agenda-javaweb",
+    liveUrl: "",
+    year: "2025",
+    status: "Concluído",
+  },
+  {
+    title: "Love2D Farm Game",
+    description:
+      "Jogo 2D em pixel art com Love2D e Lua, simulando uma fazendinha. Projeto para reforçar álgebra linear, lógica de jogos e construção de mundos 2D.",
+    image:
+      "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?w=400&h=240&fit=crop",
+    technologies: ["Lua", "Love2D", "Pixel Art", "Álgebra Linear", "Game Dev"],
+    githubUrl: "https://github.com",
+    liveUrl: "",
+    year: "2025",
+    status: "Em desenvolvimento",
+  },
+  {
+    title: "Melodias da Infância - Landing Page Institucional",
+    description:
+      "Landing page para a instituição filantrópica Melodias da Infância. Apresenta missão, projetos, equipe e seções para membros/voluntários, com carrossel de destaques, temas claro/escuro e modais de inscrição.",
+    image:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=240&fit=crop",
+    technologies: [
+      "Next.js 14",
+      "React 18",
+      "lucide-react",
+      "lucide",
+      "clsx",
+
+    ],
+    githubUrl: "https://github.com",    // substitua pelo repo real
+    liveUrl: "https://example.com",     // substitua pela URL publicada
+    year: "2025",
+    status: "Concluído"
+  },
+];
+
 
   if (isLoading) {
     return (
