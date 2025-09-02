@@ -272,7 +272,7 @@ const Articles: React.FC<ArticlesProps> = ({ isLoading }) => {
         </div>
 
         {/* Statistics */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -319,7 +319,7 @@ const Articles: React.FC<ArticlesProps> = ({ isLoading }) => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* Call to Action */}
         <motion.div
@@ -331,8 +331,8 @@ const Articles: React.FC<ArticlesProps> = ({ isLoading }) => {
         >
           <div className="inline-flex items-center space-x-2 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-6 py-3 rounded-full font-medium border border-purple-200 dark:border-purple-700">
             <BookOpen size={16} />
-            <span>Novos artigos publicados mensalmente</span>
-            <span className="animate-pulse">📝</span>
+            <span>Novos artigos publicados semanalmente</span>
+         
           </div>
         </motion.div>
       </div>
