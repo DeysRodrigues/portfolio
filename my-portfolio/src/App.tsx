@@ -4,11 +4,10 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Projects from './components/Projects'
 import CodePlayground from './components/CodePlayground'
 import Contact from './components/Contact'
 import Certificates from './components/Certificates'
-import Articles from './components/Articles'
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -57,8 +56,8 @@ function App() {
         <About isLoading={isLoading} />
         <Skills isLoading={isLoading} />
         <Certificates isLoading={isLoading} />
-        <Articles isLoading={isLoading} />
-        <Projects isLoading={isLoading} />
+        {/* <Articles isLoading={isLoading} /> */}
+        {/* <Projects isLoading={isLoading} /> */}
         {/* <Experience isLoading={isLoading} /> */}
         <CodePlayground isLoading={isLoading} />
         <Contact isLoading={isLoading} />

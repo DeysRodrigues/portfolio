@@ -45,37 +45,7 @@ const projects = [
     year: "2025",
     status: "Concluído",
   },
-  {
-    title: "Love2D Farm Game",
-    description:
-      "Jogo 2D em pixel art com Love2D e Lua, simulando uma fazendinha. Projeto para reforçar álgebra linear, lógica de jogos e construção de mundos 2D.",
-    image:
-      "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?w=400&h=240&fit=crop",
-    technologies: ["Lua", "Love2D", "Pixel Art", "Álgebra Linear", "Game Dev"],
-    githubUrl: "https://github.com",
-    liveUrl: "",
-    year: "2025",
-    status: "Em desenvolvimento",
-  },
-  {
-    title: "Melodias da Infância - Landing Page Institucional",
-    description:
-      "Landing page para a instituição filantrópica Melodias da Infância. Apresenta missão, projetos, equipe e seções para membros/voluntários, com carrossel de destaques, temas claro/escuro e modais de inscrição.",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=240&fit=crop",
-    technologies: [
-      "Next.js 14",
-      "React 18",
-      "lucide-react",
-      "lucide",
-      "clsx",
 
-    ],
-    githubUrl: "https://github.com",    // substitua pelo repo real
-    liveUrl: "https://example.com",     // substitua pela URL publicada
-    year: "2025",
-    status: "Concluído"
-  },
 ];
 
 

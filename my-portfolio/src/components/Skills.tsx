@@ -7,44 +7,59 @@ interface SkillsProps {
 }
 
 const Skills: React.FC<SkillsProps> = ({ isLoading }) => {
-  const skillCategories = [
-    {
-      title: "Frontend",
-      icon: <Palette size={32} color="#8741EF" />,
-      skills: [
-        { name: "React", color: "from-purple-400 to-purple-600" },
-        { name: "TypeScript", color: "from-purple-500 to-purple-700" },
-        { name: "Next.js", color: "from-purple-600 to-purple-800" },
-        { name: "Tailwind CSS", color: "from-purple-400 to-indigo-600" },
-        { name: "JavaScript", color: "from-purple-300 to-purple-500" },
-        { name: "HTML5 & CSS3", color: "from-purple-500 to-pink-600" },
-      ],
-    },
-    {
-      title: "Backend",
-      icon: <Code size={32} color="#8741EF" />,
-      skills: [
-        { name: "Node.js", color: "from-purple-600 to-purple-800" },
-        { name: "Python", color: "from-indigo-500 to-purple-700" },
-        { name: "Express.js", color: "from-indigo-600 to-purple-700" },
-        { name: "Java", color: "from-indigo-600 to-purple-700" },
-        { name: "PostgreSQL", color: "from-purple-400 to-pink-600" },
-        { name: "Lua", color: "from-purple-400 to-pink-600" },
-      ],
-    },
-    {
-      title: "Ferramentas & DevOps",
-      icon: <Wrench size={32} color="#8741EF" />,
-      skills: [
-        { name: "Git & GitHub", color: "from-purple-500 to-purple-700" },
-        { name: "Docker", color: "from-indigo-500 to-purple-600" },
-        { name: "WordPress", color: "from-purple-600 to-indigo-700" },
-        { name: "Jest & Testing", color: "from-purple-700 to-purple-900" },
-        { name: "Figma", color: "from-purple-500 to-pink-600" },
-        { name: "Webpack", color: "from-indigo-400 to-purple-600" },
-      ],
-    },
-  ];
+const skillCategories = [
+  {
+    title: "Front-End",
+    icon: <Palette size={32} color="#8741EF" />,
+    skills: [
+      { name: "React.js", color: "from-purple-400 to-purple-600" },
+      { name: "Next.js", color: "from-purple-500 to-purple-700" },
+      { name: "Vite", color: "from-purple-600 to-purple-800" },
+      { name: "Tailwind CSS", color: "from-purple-400 to-indigo-600" },
+      { name: "TypeScript", color: "from-purple-300 to-purple-500" },
+      { name: "Figma", color: "from-purple-500 to-pink-600" },
+    ],
+  },
+  {
+    title: "Back-End",
+    icon: <Code size={32} color="#8741EF" />,
+    skills: [
+      { name: "Node.js", color: "from-purple-600 to-purple-800" },
+      { name: "Java + Spring Boot", color: "from-indigo-500 to-purple-700" },
+      { name: "Python", color: "from-indigo-600 to-purple-700" },
+      { name: "PostgreSQL", color: "from-purple-400 to-pink-600" },
+      { name: "MySQL / SQL", color: "from-purple-400 to-pink-600" },
+      { name: "APIs REST / JSON", color: "from-indigo-400 to-purple-600" },
+    ],
+  },
+  {
+    title: "Infraestrutura & DevOps",
+    icon: <Wrench size={32} color="#8741EF" />,
+    skills: [
+      { name: "Docker", color: "from-purple-500 to-purple-700" },
+      { name: "AWS", color: "from-indigo-500 to-purple-600" },
+      { name: "Datadog", color: "from-purple-600 to-indigo-700" },
+      { name: "WordPress", color: "from-purple-700 to-purple-900" },
+    ],
+  },
+  {
+    title: "Automação & RPA",
+    icon: <Wrench size={32} color="#8741EF" />,
+    skills: [
+      { name: "Power Automate", color: "from-purple-500 to-pink-600" },
+      { name: "UiPath", color: "from-indigo-400 to-purple-600" },
+    ],
+  },
+  {
+    title: "Ferramentas & Outros",
+    icon: <Wrench size={32} color="#8741EF" />,
+    skills: [
+      { name: "Git & GitHub", color: "from-purple-400 to-purple-700" },
+      { name: "Linux", color: "from-indigo-500 to-purple-600" },
+    ],
+  },
+];
+
 
   if (isLoading) {
     return (

@@ -125,7 +125,7 @@ const Hero: React.FC<HeroProps> = ({ isLoading }) => {
             {[
               { Icon: Github, href: "https://github.com/DeysRodrigues", label: "GitHub" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/deys-rodrigues/", label: "LinkedIn" },
-              { Icon: Download, href: "/curriculo-deys-rodrigues.pdf", label: "LinkedIn" },
+              { Icon: Download, href: "/deyslane-rodrigues-curriculo.pdf", label: "LinkedIn" },
               { Icon: Mail, href: "mailto:rodriguesdeys@gmail.com", label: "Email" }
             ].map(({ Icon, href, label }) => (
               <motion.a
