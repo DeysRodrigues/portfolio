@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({ isLoading }) => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('#projects')}
+              onClick={() => scrollToSection('#featured')}
               className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-purple-500/25"
             >
               Ver Projetos

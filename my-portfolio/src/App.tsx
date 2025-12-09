@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import CodePlayground from './components/CodePlayground'
 import Contact from './components/Contact'
 import Certificates from './components/Certificates'
+import FeaturedProject from './components/FeaturedProject'
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
         <Hero isLoading={isLoading} />
         <About isLoading={isLoading} />
         <Skills isLoading={isLoading} />
+        <FeaturedProject isLoading={isLoading} />
         <Certificates isLoading={isLoading} />
         {/* <Articles isLoading={isLoading} /> */}
         {/* <Projects isLoading={isLoading} /> */}
