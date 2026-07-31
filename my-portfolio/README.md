@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+<div align="center">
+  <h1>🚀 Meu Portfólio Pessoal</h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <!-- Status do Projeto -->
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-success?style=for-the-badge" alt="Status do Projeto" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="Licença" />
+  <br/><br/>
+  <!-- Tecnologias -->
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+</div>
 
-Currently, two official plugins are available:
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este é o repositório do meu portfólio pessoal, construído com as tecnologias mais modernas do ecossistema front-end. O objetivo principal deste projeto é apresentar minhas habilidades, projetos e certificados de forma dinâmica, imersiva e com um design legal :)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Principais Funcionalidades
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🌓 **Tema Claro e Escuro (Dark Mode)**
+- 🐱 **Integração Automática com a API do GitHub** (buscando repositórios e gerando Social Previews em tempo real)
+- 💫 **Animações e Transições Fluídas** utilizando *Framer Motion*
+- 📱 **100% Responsivo** (Desktop, Tablet e Mobile)
+- 🚀 **Alta Performance** rodando com Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Stack Tecnológica
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Framework**: [React.js](https://reactjs.org/)
+- **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animações**: [Framer Motion](https://www.framer.com/motion/)
+- **Bundler**: [Vite](https://vitejs.dev/)
+- **Ícones**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Como Executar Localmente
+
+Siga os passos abaixo para rodar o projeto na sua máquina:
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/DeysRodrigues/portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Acesse a pasta do projeto:
+```bash
+cd portfolio/my-portfolio
 ```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+4. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+
+## 📬 Contato
+
+Sinta-se à vontade para entrar em contato comigo:
+
+<div align="left">
+  <a href="https://github.com/DeysRodrigues" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
