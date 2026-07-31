@@ -14,12 +14,12 @@ import {
 interface ContactProps {
   isLoading: boolean;
 }
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+const scrollToSection = (href: string) => {
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
   }
+}
 const Contact: React.FC<ContactProps> = ({ isLoading }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -358,7 +358,7 @@ const Contact: React.FC<ContactProps> = ({ isLoading }) => {
           className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-center"
         >
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            © 2025 Deys Rodrigues. Feito com ❤️ e muito código.
+            © 2026 Deys Rodrigues. Feito com ❤️.
           </p>
 
           <div className="flex justify-center items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
@@ -370,23 +370,23 @@ const Contact: React.FC<ContactProps> = ({ isLoading }) => {
           </div>
         </motion.div>
       </div>
-      
-            {/* Scroll Indicator */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2, duration: 0.8 }}
-              className="flex flex-col items-center mt-5"
-            >
-              <motion.button
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                onClick={() => scrollToSection("#hero")}
-                className=" bg-purple-50 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-200 rounded-xl"
-              >
-                <ArrowUp size={24} />
-              </motion.button>
-            </motion.div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="flex flex-col items-center mt-5"
+      >
+        <motion.button
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          onClick={() => scrollToSection("#hero")}
+          className=" bg-purple-50 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors duration-200 rounded-xl"
+        >
+          <ArrowUp size={24} />
+        </motion.button>
+      </motion.div>
     </section>
   );
 };
