@@ -64,7 +64,7 @@ const Certificates: React.FC<CertificatesProps> = ({ isLoading }) => {
     date: "2023-03",
     category: "Frontend",
     level: "Básico",
-    credentialId: "N/A",
+    credentialId: "N/A-discover",
     skills: ["HTML5", "JavaScript", "CSS"],
     color: "from-purple-500 to-purple-700",
     icon: <GraduationCap />,
@@ -76,7 +76,7 @@ const Certificates: React.FC<CertificatesProps> = ({ isLoading }) => {
     date: "2023-03",
     category: "Security",
     level: "Intermediário",
-    credentialId: "N/A",
+    credentialId: "N/A-security",
     skills: [
       "Segurança da informação",
       "Segurança em nuvem",
@@ -193,7 +193,7 @@ const Certificates: React.FC<CertificatesProps> = ({ isLoading }) => {
               className="group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700"
             >
               {/* Header with gradient */}
-              {/* <div className={`h-4 bg-gradient-to-r ${cert.color}`}></div> */}
+              <div className={`h-4 bg-gradient-to-r ${cert.color}`}></div>
 
               <div className="p-6">
                 {/* Icon and Level */}
