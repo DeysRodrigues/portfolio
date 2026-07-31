@@ -17,6 +17,9 @@
 
 <br/>
 
+<img width="1428" height="834" alt="image" src="https://github.com/user-attachments/assets/37d68adc-e80c-4657-94a4-305e35b1e014" />
+
+
 ## 🎯 Sobre o Projeto
 
 Este é o repositório do meu portfólio pessoal, construído com as tecnologias mais modernas do ecossistema front-end. O objetivo principal deste projeto é apresentar minhas habilidades, projetos e certificados de forma dinâmica, imersiva e com um design legal :)
